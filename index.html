@@ -34,6 +34,7 @@ a{color:var(--orange-text)}
 .logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:19px}
 .logo img{width:34px;height:34px;border-radius:9px}
 .nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px}
+@media (max-width:520px){.nav{gap:6px 14px;font-size:14px}}
 .nav a{color:rgba(255,255,255,.82);text-decoration:none;font-weight:600}
 .nav a:hover,.nav a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:4px}
 .hero{background:radial-gradient(120% 140% at 50% -20%,var(--petrol-light) 0%,var(--petrol) 55%,var(--petrol-dark) 100%);color:#fff;text-align:center;padding:56px 24px 170px;overflow:hidden}
@@ -86,20 +87,100 @@ footer .fb{color:#fff;font-weight:800;font-size:15px}
 footer a{color:#ffb568;text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* liste d'attente */
+.wl{max-width:520px;margin:0 auto;text-align:left}
+.wl-row{display:flex;gap:10px;flex-wrap:wrap}
+.wl input[type=email],.wl input[type=text]{flex:1 1 200px;min-width:0;font:inherit;font-size:16px;padding:15px 18px;border-radius:999px;border:1.5px solid var(--border);background:#fff;color:var(--ink)}
+.wl input:focus-visible{outline:3px solid var(--orange);outline-offset:1px;border-color:var(--orange)}
+.wl button{display:block;width:100%;margin-top:14px;font:inherit;font-size:16.5px;font-weight:800;color:#fff;background:var(--orange);border:0;border-radius:999px;padding:15px 28px;cursor:pointer;box-shadow:0 10px 30px rgba(254,130,4,.35);transition:transform .15s,background .15s}
+.wl button:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.wl button:disabled{opacity:.7;cursor:wait;transform:none}
+.wl .ok{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:13.5px;line-height:1.45;color:var(--muted);cursor:pointer}
+.wl .ok input{margin-top:2px;width:18px;height:18px;flex:none;accent-color:var(--orange)}
+.wl-msg{margin-top:12px;font-weight:700;font-size:15px}
+.wl-msg:empty{display:none}
+.wl-msg.is-ok{color:#1f7a4a}.wl-msg.is-err{color:#b3261e}
+.wl.done .wl-row,.wl.done .ok,.wl.done button{display:none}
+.wl.done .wl-msg{font-size:17px;padding:14px 18px;border-radius:14px;background:#e7f6ee}
+.dark .wl .ok{color:rgba(255,255,255,.72)}
+.dark .wl .ok a{color:#ffb568}
+.dark .wl input[type=email],.dark .wl input[type=text]{border-color:transparent}
+.dark .wl-msg.is-ok{color:#8ff0bc}.dark .wl-msg.is-err{color:#ffb4ab}
+.dark .wl.done .wl-msg{background:rgba(255,255,255,.1)}
+.tool{max-width:680px;margin:72px auto 0;padding:0 24px}
+.tool a{display:flex;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(14,49,76,.08);transition:transform .15s}
+.tool a:hover{transform:translateY(-2px)}
+.tool b{display:block;font-size:17px}.tool span{font-size:14.5px;color:var(--muted)}
+.tool .pict{margin:0;flex:none}
+/* calculateur */
+.calc{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:22px;box-shadow:0 14px 40px rgba(14,49,76,.1);margin:6px 0 30px}
+.tabs{display:flex;gap:6px;background:var(--ivory);border-radius:999px;padding:5px;margin-bottom:18px}
+.tabs button{flex:1;font:inherit;font-size:14.5px;font-weight:700;border:0;border-radius:999px;padding:10px 12px;background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--petrol);color:#fff}
+.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end}
+@media (max-width:640px){.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fields label{display:flex;flex-direction:column;gap:5px;font-size:13.5px;font-weight:700;color:var(--ink);min-width:0}
+.fields label small{font-weight:500;color:var(--muted)}
+.fields label.wide{grid-column:span 2}
+
+.fields input,.fields select{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--border);background:#fff;color:var(--ink);min-width:0;width:100%;font-variant-numeric:tabular-nums}
+.fields input:focus-visible,.fields select:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
+.calc .f-abonnes,.calc.m-abonnes .f-vues{display:none}
+.calc.m-abonnes .f-abonnes{display:flex}
+.res{margin-top:20px;border-radius:18px;background:var(--petrol);color:#fff;padding:22px}
+.res .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.res .big{font-size:clamp(40px,9vw,56px);font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.res .lab{font-size:15px;font-weight:800;padding:5px 12px;border-radius:999px;background:var(--orange);color:#fff}
+.res .lab:empty{display:none}
+.res .lab[data-band="0"]{background:#c2412d}.res .lab[data-band="1"]{background:#b7791f}.res .lab[data-band="2"]{background:#2f855a}.res .lab[data-band="3"]{background:#2b6cb0}.res .lab[data-band="4"]{background:var(--orange)}
+.res .txt{margin-top:12px;color:rgba(255,255,255,.88);font-size:15.5px}
+.res .sec{margin-top:6px;color:#ffb568;font-size:14.5px;font-weight:700}
+.res .sec:empty{display:none}
+.gauge{position:relative;margin:24px 8px 34px;height:12px;border-radius:999px}
+.gauge .you{position:absolute;top:50%;width:22px;height:22px;margin-left:-11px;margin-top:-11px;border-radius:50%;background:#fff;border:4px solid var(--petrol);box-shadow:0 0 0 2px #fff;transition:left .25s}
+.gauge .tick{position:absolute;top:20px;transform:translateX(-50%);font-size:11.5px;color:rgba(255,255,255,.72);white-space:nowrap;font-variant-numeric:tabular-nums}
+.answer{font-size:17px;background:var(--orange-soft);border-radius:16px;padding:16px 18px;margin:0 0 22px}
+.tbl{overflow-x:auto;margin:14px 0 18px}
+.tbl table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+.tbl th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.tbl .n{text-align:right;white-space:nowrap}
+.tbl td.n{font-weight:700}
+.formula{font-size:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin:10px 0 16px;font-weight:700}
+.cta-box{background:var(--petrol);color:#fff;border-radius:22px;padding:30px 22px;margin:38px 0 0;text-align:center}
+.page .cta-box h2{margin:0 0 8px;color:#fff}
+.page .cta-box p{color:rgba(255,255,255,.8);margin-bottom:0}
+.cta-box .wl{margin-top:18px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://prooven.fr/#org", "name": "Prooven", "legalName": "AUDAX", "url": "https://prooven.fr/", "logo": "https://prooven.fr/assets/chouette-512.png", "email": "antonin@prooven.fr", "founder": {"@id": "https://prooven.fr/a-propos/#antonin"}, "address": {"@type": "PostalAddress", "streetAddress": "60 rue François Ier", "postalCode": "75008", "addressLocality": "Paris", "addressCountry": "FR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Prooven", "url": "https://prooven.fr/", "inLanguage": "fr", "publisher": {"@id": "https://prooven.fr/#org"}}</script>
 </head>
 <body>
-<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/" aria-current="page">Accueil</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/" hreflang="en" lang="en">English</a></nav></div></header>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/" aria-current="page">Accueil</a><a href="/calculateur-taux-engagement/">Calculateur</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/" hreflang="en" lang="en">English</a></nav></div></header>
 <main>
-<section class="hero"><img class="owl" src="/assets/chouette-512.png" alt="La chouette Prooven" width="128" height="128">
+<section class="hero dark"><img class="owl" src="/assets/chouette-512.png" alt="La chouette Prooven" width="128" height="128">
 <div><span class="badge">Bientôt sur l&#x27;App Store</span></div><h1>Entraîne-toi à <em>faire des vues</em></h1><p class="sub">Prooven analyse ton compte Instagram, te donne une note sur 100, et t&#x27;apprend chaque jour un format viral prouvé, adapté à ton secteur.</p>
-<a class="cta" href="mailto:antonin@prooven.fr?subject=Pr%C3%A9viens-moi%20au%20lancement%20de%20Prooven&body=Mon%20compte%20Instagram%20%3A%20">Préviens-moi au lancement</a><div class="cta-note">Gratuit au lancement. Pas de spam, promis.</div></section>
-<section class="cards" aria-label="Ce que fait Prooven"><div class="card"><div class="pict" aria-hidden="true">📊</div><h3>Ta note sur 100</h3><p>Prooven analyse ton compte et te dit où tu en es : tes points forts, tes points faibles, et quoi corriger en premier.</p></div><div class="card"><div class="pict" aria-hidden="true">🎯</div><h3>1 format prouvé par jour</h3><p>Des vidéos qui ont déjà fait des millions de vues, décortiquées et adaptées à ton compte : l&#x27;accroche, la trame, et pourquoi ça marche.</p></div><div class="card"><div class="pict" aria-hidden="true">🎮</div><h3>5 minutes par jour</h3><p>Séries, défis et mini-jeux pour entraîner ton œil de créateur. Tu progresses vidéo après vidéo, sans y passer ta vie.</p></div></section>
+<form class="wl" data-source="accueil-haut" novalidate>
+<div class="wl-row"><label class="vh" for="m-accueil-haut">Ton email</label><input id="m-accueil-haut" type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Ton email"><label class="vh" for="i-accueil-haut">Ton @ Instagram (facultatif)</label><input id="i-accueil-haut" type="text" name="instagram" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="60" placeholder="Ton @ Instagram (facultatif)"></div>
+<div class="trap" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
+<label class="ok"><input type="checkbox" name="consentement" required><span>J'accepte de recevoir un email au lancement de Prooven. Désinscription en un clic. <a href="/confidentialite/">Confidentialité</a></span></label>
+<button type="submit">Préviens-moi au lancement</button>
+<p class="wl-msg" role="status" aria-live="polite"></p>
+</form><div class="cta-note">Gratuit au lancement. Pas de spam, promis.</div></section>
+<section class="cards" aria-label="Ce que fait Prooven"><div class="card"><div class="pict" aria-hidden="true">📊</div><h3>Ta note sur 100</h3><p>Prooven analyse ton compte et te dit où tu en es : tes points forts, tes points faibles, et quoi corriger en premier.</p></div><div class="card"><div class="pict" aria-hidden="true">🎯</div><h3>1 format prouvé par jour</h3><p>Des vidéos qui ont déjà fait des millions de vues, décortiquées et adaptées à ton compte : l&#x27;accroche, la trame, et pourquoi ça marche.</p></div><div class="card"><div class="pict" aria-hidden="true">🎮</div><h3>5 minutes par jour</h3><p>Séries, défis et mini-jeux pour entraîner ton œil de créateur. Tu progresses vidéo après vidéo, sans y passer ta vie.</p></div></section>
 <section class="how"><h2>Comment ça marche</h2><div class="steps"><div class="step"><div class="num">1</div><div><b>Donne ton @ Instagram</b><span>Prooven scanne ton compte et comprend ton secteur, ton audience et ton style.</span></div></div><div class="step"><div class="num">2</div><div><b>Reçois ta note et ton plan</b><span>Une note sur 100, le détail par critère, et les formats qui peuvent marcher pour toi.</span></div></div><div class="step"><div class="num">3</div><div><b>Entraîne-toi chaque jour</b><span>Un format viral décortiqué par jour, des défis et des jeux pour progresser.</span></div></div></div></section>
 <section class="trust"><img src="/assets/antonin-girardeau.jpg" alt="Antonin Girardeau" width="72" height="72" loading="lazy"><p><b>Créé par Antonin Girardeau.</b> Chaque format vient de vraies vidéos virales, décortiquées une par une. <a href="/methodologie/">Voir la méthode</a>.</p></section>
-<section class="bottom"><img src="/assets/chouette-512.png" alt="" width="64" height="64" loading="lazy"><h2>Sois prévenu au lancement</h2><a class="cta" href="mailto:antonin@prooven.fr?subject=Pr%C3%A9viens-moi%20au%20lancement%20de%20Prooven&body=Mon%20compte%20Instagram%20%3A%20">Je veux l&#x27;app</a></section>
+<section class="tool"><a href="/calculateur-taux-engagement/"><div class="pict" aria-hidden="true">🧮</div><div><b>Calcule ton taux d&#x27;engagement</b><span>Gratuit, sans inscription : compare ta vidéo aux vidéos virales de ton secteur.</span></div></a></section>
+<section class="bottom"><img src="/assets/chouette-512.png" alt="" width="64" height="64" loading="lazy"><h2>Sois prévenu au lancement</h2><form class="wl" data-source="accueil-bas" novalidate>
+<div class="wl-row"><label class="vh" for="m-accueil-bas">Ton email</label><input id="m-accueil-bas" type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Ton email"><label class="vh" for="i-accueil-bas">Ton @ Instagram (facultatif)</label><input id="i-accueil-bas" type="text" name="instagram" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="60" placeholder="Ton @ Instagram (facultatif)"></div>
+<div class="trap" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
+<label class="ok"><input type="checkbox" name="consentement" required><span>J'accepte de recevoir un email au lancement de Prooven. Désinscription en un clic. <a href="/confidentialite/">Confidentialité</a></span></label>
+<button type="submit">Je veux l&#x27;app</button>
+<p class="wl-msg" role="status" aria-live="polite"></p>
+</form></section>
 </main>
 <footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/a-propos/">À propos</a></div><div>Édité par AUDAX, EURL (entreprise unipersonnelle à responsabilité limitée) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven est une marque déposée par AUDAX.</div></div></footer>
+<script src="/assets/site.js?v=6208647e" defer></script>
 </body>
 </html>

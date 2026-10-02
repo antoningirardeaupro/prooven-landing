@@ -34,6 +34,7 @@ a{color:var(--orange-text)}
 .logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:19px}
 .logo img{width:34px;height:34px;border-radius:9px}
 .nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px}
+@media (max-width:520px){.nav{gap:6px 14px;font-size:14px}}
 .nav a{color:rgba(255,255,255,.82);text-decoration:none;font-weight:600}
 .nav a:hover,.nav a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:4px}
 .hero{background:radial-gradient(120% 140% at 50% -20%,var(--petrol-light) 0%,var(--petrol) 55%,var(--petrol-dark) 100%);color:#fff;text-align:center;padding:56px 24px 170px;overflow:hidden}
@@ -86,19 +87,86 @@ footer .fb{color:#fff;font-weight:800;font-size:15px}
 footer a{color:#ffb568;text-decoration:none}
 footer a:hover{text-decoration:underline}
 footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* liste d'attente */
+.wl{max-width:520px;margin:0 auto;text-align:left}
+.wl-row{display:flex;gap:10px;flex-wrap:wrap}
+.wl input[type=email],.wl input[type=text]{flex:1 1 200px;min-width:0;font:inherit;font-size:16px;padding:15px 18px;border-radius:999px;border:1.5px solid var(--border);background:#fff;color:var(--ink)}
+.wl input:focus-visible{outline:3px solid var(--orange);outline-offset:1px;border-color:var(--orange)}
+.wl button{display:block;width:100%;margin-top:14px;font:inherit;font-size:16.5px;font-weight:800;color:#fff;background:var(--orange);border:0;border-radius:999px;padding:15px 28px;cursor:pointer;box-shadow:0 10px 30px rgba(254,130,4,.35);transition:transform .15s,background .15s}
+.wl button:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.wl button:disabled{opacity:.7;cursor:wait;transform:none}
+.wl .ok{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:13.5px;line-height:1.45;color:var(--muted);cursor:pointer}
+.wl .ok input{margin-top:2px;width:18px;height:18px;flex:none;accent-color:var(--orange)}
+.wl-msg{margin-top:12px;font-weight:700;font-size:15px}
+.wl-msg:empty{display:none}
+.wl-msg.is-ok{color:#1f7a4a}.wl-msg.is-err{color:#b3261e}
+.wl.done .wl-row,.wl.done .ok,.wl.done button{display:none}
+.wl.done .wl-msg{font-size:17px;padding:14px 18px;border-radius:14px;background:#e7f6ee}
+.dark .wl .ok{color:rgba(255,255,255,.72)}
+.dark .wl .ok a{color:#ffb568}
+.dark .wl input[type=email],.dark .wl input[type=text]{border-color:transparent}
+.dark .wl-msg.is-ok{color:#8ff0bc}.dark .wl-msg.is-err{color:#ffb4ab}
+.dark .wl.done .wl-msg{background:rgba(255,255,255,.1)}
+.tool{max-width:680px;margin:72px auto 0;padding:0 24px}
+.tool a{display:flex;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(14,49,76,.08);transition:transform .15s}
+.tool a:hover{transform:translateY(-2px)}
+.tool b{display:block;font-size:17px}.tool span{font-size:14.5px;color:var(--muted)}
+.tool .pict{margin:0;flex:none}
+/* calculateur */
+.calc{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:22px;box-shadow:0 14px 40px rgba(14,49,76,.1);margin:6px 0 30px}
+.tabs{display:flex;gap:6px;background:var(--ivory);border-radius:999px;padding:5px;margin-bottom:18px}
+.tabs button{flex:1;font:inherit;font-size:14.5px;font-weight:700;border:0;border-radius:999px;padding:10px 12px;background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--petrol);color:#fff}
+.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end}
+@media (max-width:640px){.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fields label{display:flex;flex-direction:column;gap:5px;font-size:13.5px;font-weight:700;color:var(--ink);min-width:0}
+.fields label small{font-weight:500;color:var(--muted)}
+.fields label.wide{grid-column:span 2}
+
+.fields input,.fields select{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--border);background:#fff;color:var(--ink);min-width:0;width:100%;font-variant-numeric:tabular-nums}
+.fields input:focus-visible,.fields select:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
+.calc .f-abonnes,.calc.m-abonnes .f-vues{display:none}
+.calc.m-abonnes .f-abonnes{display:flex}
+.res{margin-top:20px;border-radius:18px;background:var(--petrol);color:#fff;padding:22px}
+.res .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.res .big{font-size:clamp(40px,9vw,56px);font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.res .lab{font-size:15px;font-weight:800;padding:5px 12px;border-radius:999px;background:var(--orange);color:#fff}
+.res .lab:empty{display:none}
+.res .lab[data-band="0"]{background:#c2412d}.res .lab[data-band="1"]{background:#b7791f}.res .lab[data-band="2"]{background:#2f855a}.res .lab[data-band="3"]{background:#2b6cb0}.res .lab[data-band="4"]{background:var(--orange)}
+.res .txt{margin-top:12px;color:rgba(255,255,255,.88);font-size:15.5px}
+.res .sec{margin-top:6px;color:#ffb568;font-size:14.5px;font-weight:700}
+.res .sec:empty{display:none}
+.gauge{position:relative;margin:24px 8px 34px;height:12px;border-radius:999px}
+.gauge .you{position:absolute;top:50%;width:22px;height:22px;margin-left:-11px;margin-top:-11px;border-radius:50%;background:#fff;border:4px solid var(--petrol);box-shadow:0 0 0 2px #fff;transition:left .25s}
+.gauge .tick{position:absolute;top:20px;transform:translateX(-50%);font-size:11.5px;color:rgba(255,255,255,.72);white-space:nowrap;font-variant-numeric:tabular-nums}
+.answer{font-size:17px;background:var(--orange-soft);border-radius:16px;padding:16px 18px;margin:0 0 22px}
+.tbl{overflow-x:auto;margin:14px 0 18px}
+.tbl table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+.tbl th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.tbl .n{text-align:right;white-space:nowrap}
+.tbl td.n{font-weight:700}
+.formula{font-size:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin:10px 0 16px;font-weight:700}
+.cta-box{background:var(--petrol);color:#fff;border-radius:22px;padding:30px 22px;margin:38px 0 0;text-align:center}
+.page .cta-box h2{margin:0 0 8px;color:#fff}
+.page .cta-box p{color:rgba(255,255,255,.8);margin-bottom:0}
+.cta-box .wl{margin-top:18px}
 </style>
 
 </head>
 <body>
-<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/legal-notice/" hreflang="en" lang="en">English</a></nav></div></header>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/calculateur-taux-engagement/">Calculateur</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/legal-notice/" hreflang="en" lang="en">English</a></nav></div></header>
 <main>
 <div class="page"><h1>Mentions légales</h1><p class="meta">Mise à jour le 2 octobre 2026</p>
-<h2>Éditeur du site</h2><p><b>AUDAX</b>, EURL (entreprise unipersonnelle à responsabilité limitée)<br>SIREN 101 471 605, RCS Paris<br>60 rue François Ier, 75008 Paris, France<br>Email : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a></p>
+<h2>Éditeur du site</h2><p><b>AUDAX</b>, EURL (entreprise unipersonnelle à responsabilité limitée)<br>SIREN 101 471 605, RCS Paris<br>60 rue François Ier, 75008 Paris, France<br>Email : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a></p>
 <h2>Directeur de la publication</h2><p>Antonin Girardeau, gérant.</p>
-<h2>Hébergeur</h2><p><b>GitHub, Inc.</b> (GitHub Pages)<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States<br>Téléphone : +1 877 448 4820<br><a href="https://pages.github.com">https://pages.github.com</a></p>
+<h2>Hébergeur</h2><p><b>GitHub, Inc.</b> (GitHub Pages)<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States<br>Téléphone : +1 877 448 4820<br><a href="https://pages.github.com">https://pages.github.com</a></p>
 <h2>Propriété intellectuelle</h2><p>La marque Prooven, le logo, la chouette, les textes, les analyses et la structure du site sont protégés par le Code de la propriété intellectuelle. Toute reproduction ou exploitation, totale ou partielle, sans autorisation écrite d'AUDAX est interdite. Les vidéos citées appartiennent à leurs auteurs ; elles sont présentées à titre d'analyse et de citation.</p>
 <h2>Données personnelles</h2><p>Voir la <a href="/confidentialite/">politique de confidentialité</a>.</p></div>
 </main>
 <footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/a-propos/">À propos</a></div><div>Édité par AUDAX, EURL (entreprise unipersonnelle à responsabilité limitée) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven est une marque déposée par AUDAX.</div></div></footer>
+<script src="/assets/site.js?v=6208647e" defer></script>
 </body>
 </html>
