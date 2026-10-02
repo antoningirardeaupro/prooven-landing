@@ -73,6 +73,67 @@
     });
   });
 
+  // ─── calculateur de revenus (barèmes en € pour 1 000 vues, posés par la page dans data-rates)
+  var rev = document.getElementById('rev');
+  if (rev) (function () {
+    var R = JSON.parse(rev.dataset.rates);
+    var T2 = {
+      fr: {
+        short: 'TikTok ne paie que les vidéos de plus d\'1 minute. Une vidéo plus courte ne rapporte rien, même avec des millions de vues.',
+        tiktok: function (q) { return 'Sur ' + q + ' vues qualifiées (vues de plus de 5 secondes, venues des pays éligibles). Il faut 10 000 abonnés, 100 000 vues sur 30 jours et avoir 18 ans.'; },
+        yt: 'Il faut être dans le Programme Partenaire YouTube. À partir du 1er février 2027, il faudra en plus 10 millions de vues Shorts sur 90 jours pour toucher ces revenus.',
+        ig: 'Instagram ne paie pas les vues en France. Ses bonus sont sur invitation, sans barème public. L\'argent d\'Instagram vient des marques.',
+        range: function (a, b) { return 'entre ' + a + ' et ' + b; },
+        need: 'Entre un nombre de vues.'
+      },
+      en: {
+        short: 'TikTok only pays for videos longer than 1 minute. A shorter video earns nothing, even with millions of views.',
+        tiktok: function (q) { return 'Based on ' + q + ' qualified views (views over 5 seconds, from eligible countries). You need 10,000 followers, 100,000 views in 30 days and to be 18+.'; },
+        yt: 'You must be in the YouTube Partner Program. From February 1, 2027, you will also need 10 million Shorts views over 90 days to earn this revenue.',
+        ig: 'Instagram does not pay per view. Its bonuses are invite-only, with no public rates. Instagram money comes from brand deals.',
+        range: function (a, b) { return 'between ' + a + ' and ' + b; },
+        need: 'Enter a number of views.'
+      }
+    }[LANG];
+    var eur = function (x) {
+      var d = x > 0 && x < 10 ? 2 : 0;
+      var s = x.toLocaleString(LANG === 'fr' ? 'fr-FR' : 'en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+      return LANG === 'fr' ? s + ' €' : '€' + s;
+    };
+    var plat = 'tiktok';
+    var tabs2 = rev.querySelectorAll('[role=tab]');
+    Array.prototype.forEach.call(tabs2, function (t) {
+      t.addEventListener('click', function () {
+        plat = t.dataset.plat;
+        Array.prototype.forEach.call(tabs2, function (x) { x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+        rev.dataset.plat = plat; go();
+      });
+    });
+    var res = rev.querySelector('.res');
+    var did = false;
+    function go() {
+      var vues = num(rev.querySelector('[name=vues]').value);
+      var pays = rev.querySelector('[name=pays]').value;
+      var big = res.querySelector('.big'), sub = res.querySelector('.lab2'), txt = res.querySelector('.txt');
+      if (!vues) { res.hidden = true; return; }
+      res.hidden = false;
+      if (!did) { did = true; track('calcul'); }
+      if (plat === 'instagram') { big.textContent = eur(0); sub.textContent = ''; txt.textContent = T2.ig; return; }
+      var base = vues, r = R[plat][pays];
+      if (plat === 'tiktok') {
+        if (!rev.querySelector('[name=long]').checked) { big.textContent = eur(0); sub.textContent = ''; txt.textContent = T2.short; return; }
+        base = vues * Number(rev.querySelector('[name=qualif]').value) / 100;
+      }
+      big.textContent = '≈ ' + eur(base * r[1] / 1000);
+      sub.textContent = T2.range(eur(base * r[0] / 1000), eur(base * r[2] / 1000));
+      txt.textContent = plat === 'tiktok' ? T2.tiktok(Math.round(base).toLocaleString(LANG === 'fr' ? 'fr-FR' : 'en-US')) : T2.yt;
+    }
+    rev.addEventListener('input', go);
+    rev.addEventListener('change', go);
+    rev.addEventListener('submit', function (e) { e.preventDefault(); go(); });
+    go();
+  })();
+
   // ─── calculateur
   var calc = document.getElementById('calc');
   if (!calc) return;

@@ -109,7 +109,7 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .dark .wl input[type=email],.dark .wl input[type=text]{border-color:transparent}
 .dark .wl-msg.is-ok{color:#8ff0bc}.dark .wl-msg.is-err{color:#ffb4ab}
 .dark .wl.done .wl-msg{background:rgba(255,255,255,.1)}
-.tool{max-width:680px;margin:72px auto 0;padding:0 24px}
+.tool{max-width:680px;margin:72px auto 0;padding:0 24px;display:grid;gap:14px}
 .tool a{display:flex;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(14,49,76,.08);transition:transform .15s}
 .tool a:hover{transform:translateY(-2px)}
 .tool b{display:block;font-size:17px}.tool span{font-size:14.5px;color:var(--muted)}
@@ -129,6 +129,12 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .fields input:focus-visible,.fields select:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
 .calc .f-abonnes,.calc.m-abonnes .f-vues{display:none}
 .calc.m-abonnes .f-abonnes{display:flex}
+#rev:not([data-plat=tiktok]) .t-only,#rev[data-plat=instagram] label.wide:nth-child(2){display:none}
+.fields label.check{flex-direction:row;align-items:center;gap:10px;font-size:15px;cursor:pointer;padding:12px 0}
+.fields label.check input{width:20px;height:20px;flex:none;accent-color:var(--orange)}
+#rev .tabs button{padding:10px 6px}
+ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
+.res .lab2{color:#ffb568}
 .res{margin-top:20px;border-radius:18px;background:var(--petrol);color:#fff;padding:22px}
 .res .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .res .big{font-size:clamp(40px,9vw,56px);font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
@@ -157,7 +163,7 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://prooven.fr/a-propos/#antonin", "name": "Antonin Girardeau", "jobTitle": "Fondateur de Prooven", "image": "https://prooven.fr/assets/antonin-girardeau.jpg", "url": "https://prooven.fr/a-propos/", "worksFor": {"@id": "https://prooven.fr/#org"}, "sameAs": ["https://www.instagram.com/antonin_girardeau/"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://prooven.fr/#org", "name": "Prooven", "legalName": "AUDAX", "url": "https://prooven.fr/", "logo": "https://prooven.fr/assets/chouette-512.png", "email": "antonin@prooven.fr", "founder": {"@id": "https://prooven.fr/a-propos/#antonin"}, "address": {"@type": "PostalAddress", "streetAddress": "60 rue François Ier", "postalCode": "75008", "addressLocality": "Paris", "addressCountry": "FR"}}</script>
 </head>
 <body>
-<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/calculateur-taux-engagement/">Calculateur</a><a href="/a-propos/" aria-current="page">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/about/" hreflang="en" lang="en">English</a></nav></div></header>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/calculateur-taux-engagement/">Engagement</a><a href="/calculateur-revenus-tiktok/">Revenus</a><a href="/a-propos/" aria-current="page">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/about/" hreflang="en" lang="en">English</a></nav></div></header>
 <main>
 <div class="page"><h1>À propos</h1><p class="lede">Prooven aide les créateurs à faire des vues avec des formats déjà prouvés, plutôt qu'au hasard.</p>
 <div class="author" id="antonin"><img src="/assets/antonin-girardeau.jpg" alt="Antonin Girardeau" width="120" height="120"><div><b>Antonin Girardeau</b><span>Fondateur de Prooven</span></div></div>
@@ -172,6 +178,6 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 <p>Une question, une idée, une erreur repérée : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a>. Antonin publie aussi sur <a href="https://www.instagram.com/antonin_girardeau/" rel="me">Instagram</a>.</p></div>
 </main>
 <footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/a-propos/">À propos</a></div><div>Édité par AUDAX, EURL (entreprise unipersonnelle à responsabilité limitée) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven est une marque déposée par AUDAX.</div></div></footer>
-<script src="/assets/site.js?v=6208647e" defer></script>
+<script src="/assets/site.js?v=4dda77c0" defer></script>
 </body>
 </html>
