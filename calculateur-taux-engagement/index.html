@@ -159,19 +159,50 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 .page .cta-box h2{margin:0 0 8px;color:#fff}
 .page .cta-box p{color:rgba(255,255,255,.8);margin-bottom:0}
 .cta-box .wl{margin-top:18px}
+#relecture textarea{width:100%;font:inherit;font-size:16px;padding:14px;border-radius:14px;border:1.5px solid var(--border);margin:10px 0 14px}
+#relecture button.cta{border:0;cursor:pointer;font-family:inherit}
+.rl-msg{font-weight:700;margin-top:16px}
+.crumbs{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+.crumbs a{color:var(--muted)}
+.post h2{font-size:24px;margin-top:40px}
+.post h3{font-size:18.5px;font-weight:800;margin:24px 0 8px}
+.post p,.post li{font-size:17px;line-height:1.65}
+.post ol{padding-left:22px}
+.post blockquote{border-left:4px solid var(--orange);background:var(--card);padding:14px 18px;border-radius:0 14px 14px 0;margin:18px 0;font-size:17px}
+.post figure{margin:22px 0}.post figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
+.post .author{margin-top:44px}
+.author a{display:inline-block;margin-top:6px;font-weight:700}
+.essentiel{background:var(--card);border:1px solid var(--border);border-left:5px solid var(--orange);border-radius:14px;padding:16px 20px;margin:0 0 26px}
+.essentiel b.t{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--orange-text);margin-bottom:6px}
+.essentiel ul{margin:0;padding-left:20px}.essentiel li{margin-bottom:6px;font-size:16px}
+.avis{background:var(--petrol);color:#fff;border-radius:18px;padding:20px 22px;margin:30px 0}
+.avis h2{color:#fff;margin-top:0}.post .avis p{color:rgba(255,255,255,.9)}
+.methode{font-size:14.5px;color:var(--muted);border-top:1px solid var(--border);margin-top:34px;padding-top:16px}
+.post .methode p{font-size:14.5px}
+figure.chart{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;overflow-x:auto}
+figure.chart svg{width:100%;height:auto;min-width:420px}
+figure.chart .ct{font-weight:800;font-size:15.5px;color:var(--ink);margin:0 0 10px}
+.related{margin-top:34px}.related ul{padding-left:20px}.related li{margin-bottom:8px}
+.grappe{margin-top:30px}
+ul.guides{list-style:none;padding:0;display:grid;gap:12px}
+ul.guides li{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin:0}
+ul.guides li a{font-weight:800;font-size:17px;text-decoration:none;color:var(--ink)}
+ul.guides li a:hover{color:var(--orange-text)}
+ul.guides small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.pill{display:inline-block;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--orange-soft);color:var(--orange-text);padding:3px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculateur de taux d'engagement", "url": "https://prooven.fr/calculateur-taux-engagement/", "inLanguage": "fr", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@id": "https://prooven.fr/#org"}, "author": {"@id": "https://prooven.fr/a-propos/#antonin"}, "dateModified": "2026-10-02"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://prooven.fr/a-propos/#antonin", "name": "Antonin Girardeau", "jobTitle": "Fondateur de Prooven", "image": "https://prooven.fr/assets/antonin-girardeau.jpg", "url": "https://prooven.fr/a-propos/", "worksFor": {"@id": "https://prooven.fr/#org"}, "sameAs": ["https://www.instagram.com/antonin_girardeau/"]}</script>
 </head>
 <body>
-<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/calculateur-taux-engagement/" aria-current="page">Engagement</a><a href="/calculateur-revenus-tiktok/">Revenus</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/engagement-rate-calculator/" hreflang="en" lang="en">English</a></nav></div></header>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/guides/">Guides</a><a href="/calculateur-taux-engagement/" aria-current="page">Engagement</a><a href="/calculateur-revenus-tiktok/">Revenus</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/engagement-rate-calculator/" hreflang="en" lang="en">English</a></nav></div></header>
 <main>
 <div class="page"><h1>Calculateur de taux d&#x27;engagement</h1><p class="lede">Instagram et TikTok. Entre les chiffres de ta vidéo : tu sais tout de suite si les gens réagissent autant que sur les vidéos virales.</p>
 <form class="calc" id="calc" data-bench="[2.64, 4.76, 7.56, 10.61]" data-sectors="{&quot;Développement personnel&quot;: 7.4, &quot;Santé &amp; Bien-être&quot;: 5.7, &quot;Lifestyle &amp; Divertissement&quot;: 5.7, &quot;Business &amp; Finance&quot;: 5.0, &quot;Technologie&quot;: 4.4, &quot;Créativité &amp; Contenu&quot;: 4.3}" aria-label="Calculateur de taux d&#x27;engagement">
 <div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-mode="vues">Par vues (Reels, TikTok)</button><button type="button" role="tab" aria-selected="false" data-mode="abonnes">Par abonnés (Instagram)</button></div>
 <div class="fields">
-<label class="f-vues"><span>Vues</span><input name="vues" type="text" inputmode="decimal" autocomplete="off" placeholder="50 000"></label>
-<label class="f-abonnes"><span>Abonnés</span><input name="abonnes" type="text" inputmode="decimal" autocomplete="off" placeholder="12 000"></label>
-<label><span>J'aime</span><input name="likes" type="text" inputmode="decimal" autocomplete="off" placeholder="2 000"></label>
+<label class="f-vues"><span>Vues</span><input name="vues" type="text" inputmode="decimal" autocomplete="off" placeholder="50 000"></label>
+<label class="f-abonnes"><span>Abonnés</span><input name="abonnes" type="text" inputmode="decimal" autocomplete="off" placeholder="12 000"></label>
+<label><span>J'aime</span><input name="likes" type="text" inputmode="decimal" autocomplete="off" placeholder="2 000"></label>
 <label><span>Commentaires</span><input name="commentaires" type="text" inputmode="decimal" autocomplete="off" placeholder="150"></label>
 <label class="f-vues"><span>Partages</span><input name="partages" type="text" inputmode="decimal" autocomplete="off" placeholder="300"></label>
 <label class="f-vues"><span>Enregistrements <small>(facultatif)</small></span><input name="enregistrements" type="text" inputmode="decimal" autocomplete="off" placeholder="250"></label>
@@ -182,11 +213,11 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 <p class="txt"></p><p class="sec"></p></div>
 </form>
 <p class="meta">Par <a href="/a-propos/">Antonin Girardeau</a>, fondateur de Prooven · Mis à jour le 2 octobre 2026 · Chiffres : vidéos virales analysées par Prooven</p>
-<p class="answer"><b>Un bon taux d'engagement sur une vidéo, c'est plus de 4,8 %.</b> C'est le taux moyen des plus de 1 500 vidéos virales Instagram et TikTok que j'ai analysées (juillet 2026). Au-dessus de 7,6 %, tu fais mieux que 3 vidéos virales sur 4. Au-dessus de 10,6 %, tu es dans le top 10 %.</p>
+<p class="answer"><b>Un bon taux d'engagement sur une vidéo, c'est plus de 4,8 %.</b> C'est le taux moyen des plus de 1 500 vidéos virales Instagram et TikTok que j'ai analysées (juillet 2026). Au-dessus de 7,6 %, tu fais mieux que 3 vidéos virales sur 4. Au-dessus de 10,6 %, tu es dans le top 10 %.</p>
 <h2>Comment calculer son taux d'engagement ?</h2>
 <p>On additionne toutes les réactions à la vidéo, puis on divise par le nombre de vues :</p>
 <p class="formula">Taux d'engagement = (j'aime + commentaires + partages + enregistrements) ÷ vues × 100</p>
-<p>Exemple : 50 000 vues, 2 000 j'aime, 150 commentaires, 300 partages et 250 enregistrements. 2 700 réactions ÷ 50 000 vues = <b>5,4 %</b>. C'est au-dessus de la moyenne des vidéos virales.</p>
+<p>Exemple : 50 000 vues, 2 000 j'aime, 150 commentaires, 300 partages et 250 enregistrements. 2 700 réactions ÷ 50 000 vues = <b>5,4 %</b>. C'est au-dessus de la moyenne des vidéos virales.</p>
 <p>Si tu ne vois pas les enregistrements (TikTok et Instagram les cachent parfois), laisse la case vide : le calcul reste juste, il est seulement un peu plus bas.</p>
 <h2>Quel est un bon taux d'engagement ?</h2>
 <p>Voici où se placent les vidéos virales que j'ai analysées une par une. C'est la barre haute : une vidéo normale fait souvent moins.</p>
@@ -195,7 +226,7 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 <tr><td>De 2,6 % à 4,8 %</td><td>Sous la moyenne des vidéos virales</td></tr>
 <tr><td>De 4,8 % à 7,6 %</td><td>Au-dessus de la moyenne des vidéos virales</td></tr>
 <tr><td>De 7,6 % à 10,6 %</td><td>Mieux que 3 vidéos virales sur 4</td></tr>
-<tr><td>Plus de 10,6 %</td><td>Top 10 % des vidéos virales</td></tr>
+<tr><td>Plus de 10,6 %</td><td>Top 10 % des vidéos virales</td></tr>
 </tbody></table></div>
 <h2>Quel taux d'engagement dans ton secteur ?</h2>
 <p>Ça change selon le sujet. Les vidéos de développement personnel font beaucoup réagir, les vidéos tech un peu moins.</p>
@@ -223,6 +254,6 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 </div>
 </main>
 <footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/a-propos/">À propos</a></div><div>Édité par AUDAX, EURL (entreprise unipersonnelle à responsabilité limitée) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven est une marque déposée par AUDAX.</div></div></footer>
-<script src="/assets/site.js?v=4dda77c0" defer></script>
+<script src="/assets/site.js?v=109ac444" defer></script>
 </body>
 </html>

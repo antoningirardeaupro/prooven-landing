@@ -21,7 +21,7 @@
 
   // ─── mesure d'audience : page, domaine d'origine, type d'événement. Rien d'autre.
   function track(evenement) {
-    if (!LIVE) return;
+    if (!LIVE || location.pathname.indexOf('/relecture/') === 0) return;
     var prov = null;
     try {
       if (document.referrer) {
@@ -72,6 +72,38 @@
         .then(function () { btn.disabled = false; btn.textContent = label; });
     });
   });
+
+  // ─── page de relecture (liens du mail « Article à valider ») : rien ne part sans un clic
+  var rl = document.getElementById('relecture');
+  if (rl) (function () {
+    var q = new URLSearchParams(location.search);
+    var id = (q.get('id') || '').slice(0, 120), jeton = (q.get('t') || '').slice(0, 80), act = q.get('a');
+    var intro = rl.querySelector('.rl-intro'), msg = rl.querySelector('.rl-msg');
+    if (!id || !jeton || (act !== 'publier' && act !== 'corriger')) { intro.textContent = 'Lien incomplet. Repars du mail de relecture.'; return; }
+    function send(row, done) {
+      post('prooven_validations', row).then(function (r) {
+        if (r.status === 201) done(); else msg.textContent = 'L\'envoi n\'a pas marché (' + r.status + '). Réessaie dans un instant.';
+      }).catch(function () { msg.textContent = 'Pas de connexion. Réessaie dans un instant.'; });
+    }
+    if (act === 'publier') {
+      intro.textContent = 'Tu valides l\'article « ' + id + ' » ? Il partira en ligne sur prooven.fr et getprooven.com dans les 5 minutes.';
+      var box = rl.querySelector('.rl-pub'); box.hidden = false;
+      box.querySelector('button').addEventListener('click', function (ev) {
+        ev.target.disabled = true;
+        send({ article_id: id, jeton: jeton, action: 'publier' }, function () { box.hidden = true; intro.textContent = '✅ C\'est validé. L\'article part en ligne dans les 5 minutes.'; });
+      });
+    } else {
+      intro.textContent = 'Corrections pour l\'article « ' + id + ' ». La nouvelle version arrive dans ta boîte mail dès qu\'elle est prête.';
+      var f = rl.querySelector('.rl-fix'); f.hidden = false;
+      f.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var note = f.querySelector('textarea').value.trim();
+        if (!note) return;
+        f.querySelector('button').disabled = true;
+        send({ article_id: id, jeton: jeton, action: 'corriger', note: note.slice(0, 4000) }, function () { f.hidden = true; intro.textContent = '✏️ Bien reçu. Je corrige et je te renvoie l\'article.'; });
+      });
+    }
+  })();
 
   // ─── calculateur de revenus (barèmes en € pour 1 000 vues, posés par la page dans data-rates)
   var rev = document.getElementById('rev');

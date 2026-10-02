@@ -159,17 +159,48 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 .page .cta-box h2{margin:0 0 8px;color:#fff}
 .page .cta-box p{color:rgba(255,255,255,.8);margin-bottom:0}
 .cta-box .wl{margin-top:18px}
+#relecture textarea{width:100%;font:inherit;font-size:16px;padding:14px;border-radius:14px;border:1.5px solid var(--border);margin:10px 0 14px}
+#relecture button.cta{border:0;cursor:pointer;font-family:inherit}
+.rl-msg{font-weight:700;margin-top:16px}
+.crumbs{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+.crumbs a{color:var(--muted)}
+.post h2{font-size:24px;margin-top:40px}
+.post h3{font-size:18.5px;font-weight:800;margin:24px 0 8px}
+.post p,.post li{font-size:17px;line-height:1.65}
+.post ol{padding-left:22px}
+.post blockquote{border-left:4px solid var(--orange);background:var(--card);padding:14px 18px;border-radius:0 14px 14px 0;margin:18px 0;font-size:17px}
+.post figure{margin:22px 0}.post figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
+.post .author{margin-top:44px}
+.author a{display:inline-block;margin-top:6px;font-weight:700}
+.essentiel{background:var(--card);border:1px solid var(--border);border-left:5px solid var(--orange);border-radius:14px;padding:16px 20px;margin:0 0 26px}
+.essentiel b.t{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--orange-text);margin-bottom:6px}
+.essentiel ul{margin:0;padding-left:20px}.essentiel li{margin-bottom:6px;font-size:16px}
+.avis{background:var(--petrol);color:#fff;border-radius:18px;padding:20px 22px;margin:30px 0}
+.avis h2{color:#fff;margin-top:0}.post .avis p{color:rgba(255,255,255,.9)}
+.methode{font-size:14.5px;color:var(--muted);border-top:1px solid var(--border);margin-top:34px;padding-top:16px}
+.post .methode p{font-size:14.5px}
+figure.chart{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;overflow-x:auto}
+figure.chart svg{width:100%;height:auto;min-width:420px}
+figure.chart .ct{font-weight:800;font-size:15.5px;color:var(--ink);margin:0 0 10px}
+.related{margin-top:34px}.related ul{padding-left:20px}.related li{margin-bottom:8px}
+.grappe{margin-top:30px}
+ul.guides{list-style:none;padding:0;display:grid;gap:12px}
+ul.guides li{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin:0}
+ul.guides li a{font-weight:800;font-size:17px;text-decoration:none;color:var(--ink)}
+ul.guides li a:hover{color:var(--orange-text)}
+ul.guides small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.pill{display:inline-block;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--orange-soft);color:var(--orange-text);padding:3px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Combien rapportent tes vues ?", "url": "https://prooven.fr/calculateur-revenus-tiktok/", "inLanguage": "fr", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@id": "https://prooven.fr/#org"}, "author": {"@id": "https://prooven.fr/a-propos/#antonin"}, "dateModified": "2026-10-02"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://prooven.fr/a-propos/#antonin", "name": "Antonin Girardeau", "jobTitle": "Fondateur de Prooven", "image": "https://prooven.fr/assets/antonin-girardeau.jpg", "url": "https://prooven.fr/a-propos/", "worksFor": {"@id": "https://prooven.fr/#org"}, "sameAs": ["https://www.instagram.com/antonin_girardeau/"]}</script>
 </head>
 <body>
-<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/calculateur-taux-engagement/">Engagement</a><a href="/calculateur-revenus-tiktok/" aria-current="page">Revenus</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/tiktok-money-calculator/" hreflang="en" lang="en">English</a></nav></div></header>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/guides/">Guides</a><a href="/calculateur-taux-engagement/">Engagement</a><a href="/calculateur-revenus-tiktok/" aria-current="page">Revenus</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/tiktok-money-calculator/" hreflang="en" lang="en">English</a></nav></div></header>
 <main>
 <div class="page"><h1>Combien rapportent tes vues ?</h1><p class="lede">TikTok, YouTube Shorts et Instagram. Entre un nombre de vues : tu vois tout de suite ce que la plateforme te paierait vraiment en 2026.</p>
 <form class="calc" id="rev" data-plat="tiktok" data-rates="{&quot;tiktok&quot;: {&quot;fr&quot;: [0.04, 0.12, 0.4], &quot;us&quot;: [0.15, 0.75, 3.0]}, &quot;youtube&quot;: {&quot;fr&quot;: [0.05, 0.09, 0.15], &quot;us&quot;: [0.15, 0.27, 0.6]}}" aria-label="Calculateur de revenus">
 <div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-plat="tiktok">TikTok</button><button type="button" role="tab" aria-selected="false" data-plat="youtube">YouTube Shorts</button><button type="button" role="tab" aria-selected="false" data-plat="instagram">Instagram</button></div>
 <div class="fields">
-<label class="wide"><span>Nombre de vues</span><input name="vues" type="text" inputmode="decimal" autocomplete="off" value="1 000 000"></label>
+<label class="wide"><span>Nombre de vues</span><input name="vues" type="text" inputmode="decimal" autocomplete="off" value="1 000 000"></label>
 <label class="wide"><span>Ton public</span><select name="pays"><option value="fr" selected>Surtout en France</option><option value="us">Surtout aux États-Unis</option></select></label>
 <label class="t-only wide"><span>Part de vues qualifiées</span><select name="qualif"><option value="10">10 %</option><option value="25">25 %</option><option value="40" selected>40 %</option><option value="50">50 %</option><option value="70">70 %</option></select></label>
 <label class="t-only wide check"><input type="checkbox" name="long" checked><span>Vidéo de plus d&#x27;1 minute</span></label>
@@ -179,34 +210,34 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 <p class="meta">Par <a href="/a-propos/">Antonin Girardeau</a>, fondateur de Prooven · Mis à jour le 2 octobre 2026 · Barèmes relevés en septembre 2026</p>
 <p class="answer"><b>En France en 2026, TikTok paie environ 0,12 € pour 1 000 vues qualifiées, soit à peu près 48 € pour 1 million de vues.</b> YouTube Shorts paie environ 0,09 € pour 1 000 vues (90 € le million). Instagram ne paie pas les vues. Barèmes relevés en septembre 2026 auprès de créateurs et des pages officielles.</p>
 <h2>Combien paie TikTok pour 1 000 vues ?</h2>
-<p>Très peu, et de moins en moins en France. Début 2026, des créateurs français touchaient encore 0,70 à 1,30 € pour 1 000 vues qualifiées. Depuis l'été, ils parlent plutôt de 0,05 à 0,15 €.</p>
+<p>Très peu, et de moins en moins en France. Début 2026, des créateurs français touchaient encore 0,70 à 1,30 € pour 1 000 vues qualifiées. Depuis l'été, ils parlent plutôt de 0,05 à 0,15 €.</p>
 <div class="tbl"><table><thead><tr><th>Public</th><th class="n">Bas</th><th class="n">Habituel</th><th class="n">Haut</th></tr></thead><tbody>
 <tr><td>France</td><td class="n">0,04 €</td><td class="n">0,12 €</td><td class="n">0,40 €</td></tr>
 <tr><td>États-Unis, Royaume-Uni</td><td class="n">0,15 €</td><td class="n">0,75 €</td><td class="n">3,00 €</td></tr></tbody></table></div>
-<p>Pour 1 000 vues <b>qualifiées</b>. Une vue compte seulement si elle dure plus de 5 secondes, vient d'un pays éligible (dont la France) et n'est pas payée. Une seule vue par personne. Chez les créateurs installés, ça fait souvent 30 à 50 % des vues. Sur un compte neuf, ça peut tomber à 3 %.</p>
+<p>Pour 1 000 vues <b>qualifiées</b>. Une vue compte seulement si elle dure plus de 5 secondes, vient d'un pays éligible (dont la France) et n'est pas payée. Une seule vue par personne. Chez les créateurs installés, ça fait souvent 30 à 50 % des vues. Sur un compte neuf, ça peut tomber à 3 %.</p>
 <p>Le montant monte avec la « récompense supplémentaire » : TikTok paie plus les vidéos très regardées, soignées et utiles. Un public plus âgé paie aussi mieux, parce que les marques le valorisent plus.</p>
 <h2>Combien de vues pour gagner de l'argent sur TikTok ?</h2>
 <p>Il faut d'abord entrer dans le Programme de récompenses pour les créateurs : <b>18 ans, 10 000 abonnés et 100 000 vues sur les 30 derniers jours</b>, avec un compte personnel. Ensuite, seules les vidéos de <b>plus d'1 minute</b> rapportent.</p>
 <p class="box">C'est là que ça coince. La moitié des vidéos virales que j'ai analysées durent 37 secondes ou moins. Sur TikTok, elles ne rapporteraient pas un centime, même avec des millions de vues.</p>
 <h2>Combien paie YouTube Shorts ?</h2>
-<p>YouTube reverse 45 % des revenus publicitaires des Shorts aux créateurs, partagés selon leurs vues. Pour un public français, ça fait environ <b>0,09 € pour 1 000 vues</b> (entre 0,05 € et 0,15 €). Pour un public américain, plutôt 0,27 €.</p>
+<p>YouTube reverse 45 % des revenus publicitaires des Shorts aux créateurs, partagés selon leurs vues. Pour un public français, ça fait environ <b>0,09 € pour 1 000 vues</b> (entre 0,05 € et 0,15 €). Pour un public américain, plutôt 0,27 €.</p>
 <p>Attention : à partir du <b>1er février 2027</b>, YouTube ne paiera les Shorts qu'aux chaînes qui font au moins 10 millions de vues Shorts sur 90 jours. La plupart des petites chaînes passeront à 0.</p>
 <h2>Combien paie Instagram par vue ?</h2>
 <p><b>Rien en France.</b> Instagram n'a pas de programme ouvert qui paie les vues. Ses bonus sont sur invitation, sans barème public. Sur Instagram, l'argent vient des collaborations avec les marques, des abonnements et des cadeaux en direct.</p>
 <h2>Combien rapporte 1 million de vues ?</h2>
 <div class="tbl"><table><thead><tr><th>Plateforme</th><th class="n">Public France</th><th class="n">Public États-Unis</th></tr></thead><tbody>
-<tr><td>TikTok (vidéo de plus d'1 min, 40 % de vues qualifiées)</td><td class="n">48 €</td><td class="n">300 €</td></tr>
+<tr><td>TikTok (vidéo de plus d'1 min, 40 % de vues qualifiées)</td><td class="n">48 €</td><td class="n">300 €</td></tr>
 <tr><td>YouTube Shorts</td><td class="n">90 €</td><td class="n">270 €</td></tr>
 <tr><td>Instagram Reels</td><td class="n">0 €</td><td class="n">0 €</td></tr></tbody></table></div>
 <p>Ces montants bougent beaucoup d'un mois à l'autre. Des créateurs ont vu leur paiement être divisé par 10 en quelques semaines, sans rien changer.</p>
 <h2>Où est le vrai argent ?</h2>
 <p>Dans les marques. Une seule collaboration rapporte plus que des millions de vues payées par les plateformes. Voici les prix habituels payés par de grandes marques en France au 1er semestre 2026 (1 publication + 1 story) :</p>
 <div class="tbl"><table><thead><tr><th>Taille du compte</th><th class="n">Prix habituel</th></tr></thead><tbody>
-<tr><td>10 000 à 50 000 abonnés</td><td class="n">3 000 €</td></tr>
-<tr><td>50 000 à 500 000 abonnés</td><td class="n">4 500 €</td></tr>
-<tr><td>500 000 à 1 million</td><td class="n">8 000 €</td></tr>
-<tr><td>Plus d'1 million</td><td class="n">13 000 €</td></tr></tbody></table></div>
-<p>Ces prix viennent d'une agence qui travaille pour de grandes marques : seul, un petit créateur négocie souvent moins. Un YouTubeur français de 10 000 abonnés parle par exemple de 500 à 800 € par vidéo sponsorisée.</p>
+<tr><td>10 000 à 50 000 abonnés</td><td class="n">3 000 €</td></tr>
+<tr><td>50 000 à 500 000 abonnés</td><td class="n">4 500 €</td></tr>
+<tr><td>500 000 à 1 million</td><td class="n">8 000 €</td></tr>
+<tr><td>Plus d'1 million</td><td class="n">13 000 €</td></tr></tbody></table></div>
+<p>Ces prix viennent d'une agence qui travaille pour de grandes marques : seul, un petit créateur négocie souvent moins. Un YouTubeur français de 10 000 abonnés parle par exemple de 500 à 800 € par vidéo sponsorisée.</p>
 <p>Pour décrocher ces collaborations, il faut des vues régulières dans ta niche, et un public qui réagit : <a href="/calculateur-taux-engagement/">calcule ton taux d'engagement</a>. C'est exactement ce que Prooven t'aide à construire.</p>
 <h2>D'où viennent ces chiffres ?</h2>
 <p>Des pages officielles de TikTok et YouTube, d'études publiées en 2026, et de dizaines de créateurs qui ont montré leurs vrais paiements (septembre 2026). Toutes les sommes sont en euros, au taux du 2 octobre 2026. Quand une source se contredit, je garde la fourchette prudente.</p>
@@ -221,6 +252,6 @@ ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
 </div>
 </main>
 <footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/a-propos/">À propos</a></div><div>Édité par AUDAX, EURL (entreprise unipersonnelle à responsabilité limitée) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven est une marque déposée par AUDAX.</div></div></footer>
-<script src="/assets/site.js?v=4dda77c0" defer></script>
+<script src="/assets/site.js?v=109ac444" defer></script>
 </body>
 </html>
