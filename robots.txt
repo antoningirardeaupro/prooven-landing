@@ -1,31 +1,51 @@
 User-agent: *
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: Googlebot
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: Bingbot
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: OAI-SearchBot
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: ChatGPT-User
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: PerplexityBot
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: Perplexity-User
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: Claude-SearchBot
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: Claude-User
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 User-agent: Applebot
+Disallow: /apercu/
+Disallow: /relecture/
 Allow: /
 
 Sitemap: https://prooven.fr/sitemap.xml
