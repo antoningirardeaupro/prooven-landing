@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How many views is viral? 43% of viral videos stay under 1M</title>
+<meta name="description" content="43% of viral videos never hit 1M views. The real bar by account size: 15x followers under 100K, 1.1x up to 1M, and the 5x rule tested.">
+<meta name="robots" content="noindex">
+
+
+<meta name="theme-color" content="#0e314c">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prooven">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How many views is viral? 43% of viral videos stay under 1M">
+<meta property="og:description" content="43% of viral videos never hit 1M views. The real bar by account size: 15x followers under 100K, 1.1x up to 1M, and the 5x rule tested.">
+
+<meta property="og:image" content="https://getprooven.com/assets/og-en.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:swap;src:url(/assets/fonts/dmsans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:swap;src:url(/assets/fonts/dmsans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--petrol:#0e314c;--petrol-dark:#0a2337;--petrol-light:#16496e;--orange:#fe8204;--orange-dark:#d96a00;--orange-soft:#fff1e2;--orange-text:#b8590a;--ivory:#fbf7f0;--card:#fff;--ink:#142430;--muted:#5b6b77;--border:#e7dfd2}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--ivory);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.55}
+a{color:var(--orange-text)}
+.top{background:var(--petrol);color:#fff}
+.top .in{max-width:1020px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:19px}
+.logo img{width:34px;height:34px;border-radius:9px}
+.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px}
+@media (max-width:520px){.nav{gap:6px 14px;font-size:14px}}
+.nav a{color:rgba(255,255,255,.82);text-decoration:none;font-weight:600}
+.nav a:hover,.nav a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.hero{background:radial-gradient(120% 140% at 50% -20%,var(--petrol-light) 0%,var(--petrol) 55%,var(--petrol-dark) 100%);color:#fff;text-align:center;padding:56px 24px 170px;overflow:hidden}
+.owl{width:128px;height:128px;border-radius:30px;box-shadow:0 18px 50px rgba(0,0,0,.4);margin-bottom:34px;animation:float 5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.owl{animation:none}}
+.badge{display:inline-block;background:rgba(254,130,4,.16);border:1px solid rgba(254,130,4,.45);color:#ffb568;font-size:13.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:8px 18px;border-radius:999px;margin-bottom:24px}
+h1{font-size:clamp(36px,6.5vw,60px);font-weight:900;letter-spacing:-.025em;line-height:1.05;max-width:780px;margin:0 auto 20px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--orange)}
+.hero p.sub{font-size:clamp(16px,2.2vw,19px);color:rgba(255,255,255,.8);max-width:580px;margin:0 auto 36px}
+.cta{display:inline-block;background:var(--orange);color:#fff;font-size:17px;font-weight:800;text-decoration:none;padding:17px 36px;border-radius:999px;box-shadow:0 10px 30px rgba(254,130,4,.4);transition:transform .15s,background .15s}
+.cta:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.cta-note{margin-top:14px;font-size:13.5px;color:rgba(255,255,255,.6)}
+.cards{max-width:1020px;margin:-110px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;position:relative;z-index:2}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px 28px;box-shadow:0 14px 40px rgba(14,49,76,.12)}
+.pict{width:52px;height:52px;border-radius:14px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px}
+.card h3{font-size:19px;font-weight:800;margin-bottom:8px;letter-spacing:-.01em}
+.card p{font-size:15px;color:var(--muted)}
+.how{max-width:680px;margin:80px auto 0;padding:0 24px;text-align:center}
+.how h2,.bottom h2{font-size:clamp(26px,4vw,34px);font-weight:900;letter-spacing:-.02em;margin-bottom:32px;text-wrap:balance}
+.steps{text-align:left}
+.step{display:flex;gap:18px;align-items:flex-start;padding:18px 0}
+.step+.step{border-top:1px solid var(--border)}
+.num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--petrol);color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.step b{display:block;font-size:16.5px;margin-bottom:3px}
+.step span{font-size:14.5px;color:var(--muted)}
+.trust{max-width:680px;margin:72px auto 0;padding:0 24px;display:flex;gap:18px;align-items:center}
+.trust img{width:72px;height:72px;border-radius:50%;flex:none}
+.trust p{font-size:15px;color:var(--muted)}
+.trust b{color:var(--ink)}
+.bottom{text-align:center;margin:72px auto 0;padding:0 24px}
+.bottom img{width:64px;height:64px;border-radius:16px;margin-bottom:18px}
+.page{max-width:760px;margin:0 auto;padding:48px 24px 0}
+.page h1{font-size:clamp(30px,5vw,42px);text-align:left;margin:0 0 10px;color:var(--ink)}
+.page .lede{font-size:18px;color:var(--muted);margin-bottom:28px}
+.page h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:34px 0 10px;text-wrap:balance}
+.page p,.page li{font-size:16px;margin-bottom:12px}
+.page ul{padding-left:22px}
+.page .meta{font-size:13.5px;color:var(--muted);margin-bottom:24px}
+.author{display:flex;gap:22px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px;margin:8px 0 26px}
+.author img{width:120px;height:120px;border-radius:50%;flex:none}
+.author b{display:block;font-size:20px}
+.author span{color:var(--muted)}
+@media (max-width:520px){.author{flex-direction:column;text-align:center}.trust{flex-direction:column;text-align:center}}
+.box{background:var(--orange-soft);border-radius:16px;padding:18px 20px;margin:20px 0}
+footer{margin-top:90px;background:var(--petrol-dark);color:rgba(255,255,255,.65);padding:36px 24px 42px;font-size:13.5px;line-height:1.8}
+footer .in{max-width:1020px;margin:0 auto;display:grid;gap:10px;text-align:center}
+footer .fb{color:#fff;font-weight:800;font-size:15px}
+footer a{color:#ffb568;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* liste d'attente */
+.wl{max-width:520px;margin:0 auto;text-align:left}
+.wl-row{display:flex;gap:10px;flex-wrap:wrap}
+.wl input[type=email],.wl input[type=text]{flex:1 1 200px;min-width:0;font:inherit;font-size:16px;padding:15px 18px;border-radius:999px;border:1.5px solid var(--border);background:#fff;color:var(--ink)}
+.wl input:focus-visible{outline:3px solid var(--orange);outline-offset:1px;border-color:var(--orange)}
+.wl button{display:block;width:100%;margin-top:14px;font:inherit;font-size:16.5px;font-weight:800;color:#fff;background:var(--orange);border:0;border-radius:999px;padding:15px 28px;cursor:pointer;box-shadow:0 10px 30px rgba(254,130,4,.35);transition:transform .15s,background .15s}
+.wl button:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.wl button:disabled{opacity:.7;cursor:wait;transform:none}
+.wl .ok{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:13.5px;line-height:1.45;color:var(--muted);cursor:pointer}
+.wl .ok input{margin-top:2px;width:18px;height:18px;flex:none;accent-color:var(--orange)}
+.wl-msg{margin-top:12px;font-weight:700;font-size:15px}
+.wl-msg:empty{display:none}
+.wl-msg.is-ok{color:#1f7a4a}.wl-msg.is-err{color:#b3261e}
+.wl.done .wl-row,.wl.done .ok,.wl.done button{display:none}
+.wl.done .wl-msg{font-size:17px;padding:14px 18px;border-radius:14px;background:#e7f6ee}
+.dark .wl .ok{color:rgba(255,255,255,.72)}
+.dark .wl .ok a{color:#ffb568}
+.dark .wl input[type=email],.dark .wl input[type=text]{border-color:transparent}
+.dark .wl-msg.is-ok{color:#8ff0bc}.dark .wl-msg.is-err{color:#ffb4ab}
+.dark .wl.done .wl-msg{background:rgba(255,255,255,.1)}
+.tool{max-width:680px;margin:72px auto 0;padding:0 24px;display:grid;gap:14px}
+.tool a{display:flex;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(14,49,76,.08);transition:transform .15s}
+.tool a:hover{transform:translateY(-2px)}
+.tool b{display:block;font-size:17px}.tool span{font-size:14.5px;color:var(--muted)}
+.tool .pict{margin:0;flex:none}
+/* calculateur */
+.calc{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:22px;box-shadow:0 14px 40px rgba(14,49,76,.1);margin:6px 0 30px}
+.tabs{display:flex;gap:6px;background:var(--ivory);border-radius:999px;padding:5px;margin-bottom:18px}
+.tabs button{flex:1;font:inherit;font-size:14.5px;font-weight:700;border:0;border-radius:999px;padding:10px 12px;background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--petrol);color:#fff}
+.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end}
+@media (max-width:640px){.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fields label{display:flex;flex-direction:column;gap:5px;font-size:13.5px;font-weight:700;color:var(--ink);min-width:0}
+.fields label small{font-weight:500;color:var(--muted)}
+.fields label.wide{grid-column:span 2}
+
+.fields input,.fields select{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--border);background:#fff;color:var(--ink);min-width:0;width:100%;font-variant-numeric:tabular-nums}
+.fields input:focus-visible,.fields select:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
+.calc .f-abonnes,.calc.m-abonnes .f-vues{display:none}
+.calc.m-abonnes .f-abonnes{display:flex}
+#rev:not([data-plat=tiktok]) .t-only,#rev[data-plat=instagram] label.wide:nth-child(2){display:none}
+.fields label.check{flex-direction:row;align-items:center;gap:10px;font-size:15px;cursor:pointer;padding:12px 0}
+.fields label.check input{width:20px;height:20px;flex:none;accent-color:var(--orange)}
+#rev .tabs button{padding:10px 6px}
+ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
+.res .lab2{color:#ffb568}
+.res{margin-top:20px;border-radius:18px;background:var(--petrol);color:#fff;padding:22px}
+.res .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.res .big{font-size:clamp(40px,9vw,56px);font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.res .lab{font-size:15px;font-weight:800;padding:5px 12px;border-radius:999px;background:var(--orange);color:#fff}
+.res .lab:empty{display:none}
+.res .lab[data-band="0"]{background:#c2412d}.res .lab[data-band="1"]{background:#b7791f}.res .lab[data-band="2"]{background:#2f855a}.res .lab[data-band="3"]{background:#2b6cb0}.res .lab[data-band="4"]{background:var(--orange)}
+.res .txt{margin-top:12px;color:rgba(255,255,255,.88);font-size:15.5px}
+.res .sec{margin-top:6px;color:#ffb568;font-size:14.5px;font-weight:700}
+.res .sec:empty{display:none}
+.gauge{position:relative;margin:24px 8px 34px;height:12px;border-radius:999px}
+.gauge .you{position:absolute;top:50%;width:22px;height:22px;margin-left:-11px;margin-top:-11px;border-radius:50%;background:#fff;border:4px solid var(--petrol);box-shadow:0 0 0 2px #fff;transition:left .25s}
+.gauge .tick{position:absolute;top:20px;transform:translateX(-50%);font-size:11.5px;color:rgba(255,255,255,.72);white-space:nowrap;font-variant-numeric:tabular-nums}
+.answer{font-size:17px;background:var(--orange-soft);border-radius:16px;padding:16px 18px;margin:0 0 22px}
+.tbl{overflow-x:auto;margin:14px 0 18px}
+.tbl table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+.tbl th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.tbl .n{text-align:right;white-space:nowrap}
+.tbl td.n{font-weight:700}
+.formula{font-size:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin:10px 0 16px;font-weight:700}
+.cta-box{background:var(--petrol);color:#fff;border-radius:22px;padding:30px 22px;margin:38px 0 0;text-align:center}
+.page .cta-box h2{margin:0 0 8px;color:#fff}
+.page .cta-box p{color:rgba(255,255,255,.8);margin-bottom:0}
+.cta-box .wl{margin-top:18px}
+#relecture textarea{width:100%;font:inherit;font-size:16px;padding:14px;border-radius:14px;border:1.5px solid var(--border);margin:10px 0 14px}
+#relecture button.cta{border:0;cursor:pointer;font-family:inherit}
+.rl-msg{font-weight:700;margin-top:16px}
+.crumbs{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+.crumbs a{color:var(--muted)}
+.post h2{font-size:24px;margin-top:40px}
+.post h3{font-size:18.5px;font-weight:800;margin:24px 0 8px}
+.post p,.post li{font-size:17px;line-height:1.65}
+.post ol{padding-left:22px}
+.post blockquote{border-left:4px solid var(--orange);background:var(--card);padding:14px 18px;border-radius:0 14px 14px 0;margin:18px 0;font-size:17px}
+.post figure{margin:22px 0}.post figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
+.post .author{margin-top:44px}
+.author a{display:inline-block;margin-top:6px;font-weight:700}
+.essentiel{background:var(--card);border:1px solid var(--border);border-left:5px solid var(--orange);border-radius:14px;padding:16px 20px;margin:0 0 26px}
+.essentiel b.t{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--orange-text);margin-bottom:6px}
+.essentiel ul{margin:0;padding-left:20px}.essentiel li{margin-bottom:6px;font-size:16px}
+.avis{background:var(--petrol);color:#fff;border-radius:18px;padding:20px 22px;margin:30px 0}
+.avis h2{color:#fff;margin-top:0}.post .avis p{color:rgba(255,255,255,.9)}
+.methode{font-size:14.5px;color:var(--muted);border-top:1px solid var(--border);margin-top:34px;padding-top:16px}
+.post .methode p{font-size:14.5px}
+figure.chart{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;overflow-x:auto}
+figure.chart svg{width:100%;height:auto;min-width:420px}
+figure.chart .ct{font-weight:800;font-size:15.5px;color:var(--ink);margin:0 0 10px}
+.related{margin-top:34px}.related ul{padding-left:20px}.related li{margin-bottom:8px}
+.grappe{margin-top:30px}
+ul.guides{list-style:none;padding:0;display:grid;gap:12px}
+ul.guides li{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin:0}
+ul.guides li a{font-weight:800;font-size:17px;text-decoration:none;color:var(--ink)}
+ul.guides li a:hover{color:var(--orange-text)}
+ul.guides small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.pill{display:inline-block;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--orange-soft);color:var(--orange-text);padding:3px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
+</style>
+
+</head>
+<body>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><a href="/guides/" aria-current="page">Guides</a><a href="/engagement-rate-calculator/">Engagement</a><a href="/tiktok-money-calculator/">Earnings</a><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="https://prooven.fr/" hreflang="fr" lang="fr">Français</a></nav></div></header>
+<main>
+<div style="background:#fff1e2;border:1px solid #fe8204;border-radius:12px;padding:10px 14px;margin:12px auto;max-width:760px;font-size:14px"><b>Aperçu privé</b> : cet article n'est pas encore en ligne. Il sortira après validation.</div><article class="page post"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/guides/">Guides</a> › <span>How many views is viral? Real thresholds by account size (43% of viral videos stay under 1M)</span></nav><h1>How many views is viral? Real thresholds by account size (43% of viral videos stay under 1M)</h1><p class="meta">By <a href="/about/">Antonin Girardeau</a>, founder of Prooven · Published October 15, 2026 · 8 min read</p><p class="answer">TikTok has no official viral threshold. The usual benchmark is 1 million views, but the real bar depends on account size. Across nearly 390 viral videos where I know the creator's follower count, three out of four top 15 times their followers under 100K followers, 1.1 times between 100K and 1M, and 0.28 times above 1M (Prooven data, 2023 to July 2026).</p>
+
+<div class="essentiel"><b class="t">In short</b><ul>
+<li>43% of the viral videos I analyzed never reached 1 million views. Among English-language videos, it's 44%.</li>
+<li>The "5x your followers" rule holds for small accounts: 82% of viral videos from accounts under 100K pass it. Above 1M followers, only 12% do.</li>
+<li>Viral videos land in the same range whatever the account size: 55% cross 1 million views both under 100K followers and between 100K and 1M.</li>
+<li>The bigger a video gets, the fewer comments it gets per view: 2.3 per 1,000 views at 10K to 100K views, 0.3 above 5 million.</li>
+</ul></div>
+
+<h2>The five view tiers, from flop to mega-viral</h2>
+<p>I sort every video into five fixed view tiers. Under 10K views is a flop. 10K to 100K is a normal video. 100K to 1M is a good one. 1M to 5M is viral, and anything above 5M is mega-viral.</p>
+<p>TikTok didn't set these tiers. I use them to sort nearly 500 videos I picked because they took off, then broke down one by one. Here is the part most creators miss: 35% of these viral videos stopped between 100K and 1M views. Put the bar at 1 million and you write off more than a third of the videos that actually went viral.</p>
+<figure class="chart"><figcaption class="ct">Views of the viral videos we analyzed, by tier</figcaption><svg viewBox="0 0 640 186" role="img" aria-label="Views of the viral videos we analyzed, by tier : Under 100K 8%, 100K to 1M 35%, 1M to 5M 37%, Over 5M 20%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, system-ui, sans-serif"><text x="180" y="25.0" text-anchor="end" font-size="14" fill="#142430">Under 100K</text><rect x="190" y="5" width="82.2" height="30" rx="6" fill="#0e314c"/><text x="280.2" y="25.0" font-size="14" font-weight="700" fill="#142430">8%</text><text x="180" y="69.0" text-anchor="end" font-size="14" fill="#142430">100K to 1M</text><rect x="190" y="49" width="359.5" height="30" rx="6" fill="#fe8204"/><text x="557.5" y="69.0" font-size="14" font-weight="700" fill="#142430">35%</text><text x="180" y="113.0" text-anchor="end" font-size="14" fill="#142430">1M to 5M</text><rect x="190" y="93" width="380.0" height="30" rx="6" fill="#0e314c"/><text x="578.0" y="113.0" font-size="14" font-weight="700" fill="#142430">37%</text><text x="180" y="157.0" text-anchor="end" font-size="14" fill="#142430">Over 5M</text><rect x="190" y="137" width="205.4" height="30" rx="6" fill="#0e314c"/><text x="403.4" y="157.0" font-size="14" font-weight="700" fill="#142430">20%</text></svg><figcaption>Source: nearly 500 viral videos analyzed one by one by Prooven (2023 to July 2026, mostly Instagram Reels). Share of videos in each tier.</figcaption></figure>
+<p class="box">Across more than 1,500 viral videos in the Prooven database, half got 703,000 views or fewer. One in four stayed under 174,000 views (snapshot from July 29, 2026).</p>
+
+<h2>Why every site gives you a different number</h2>
+<p>Each site picks its own threshold, and none of them shows data. Techweez says a small account can celebrate 10K to 50K views. Virlo, a video analytics tool, uses the 5 to 10 times your followers rule. Both are partly right because they're describing different accounts.</p>
+<div class="tbl"><table>
+<thead><tr><th>Source</th><th>Stated threshold</th><th>What my data shows</th></tr></thead>
+<tbody>
+<tr><td><a href="https://techweez.com/2026/06/10/how-many-tiktok-views-do-you-need-to-go-viral-in-2026/">Techweez</a> (June 18, 2026)</td><td>Small account: 10K to 50K views. Growing account: 100K. Big creator: 1M.</td><td>Under 100K followers, three viral videos out of four top 325K views. 10K is a very low bar.</td></tr>
+<tr><td><a href="https://virlo.ai/blog/how-many-views-is-viral-on-tiktok-in-2026">Virlo</a> (July 20, 2026)</td><td>5 to 10 times your followers. Above 1M followers: 5M views.</td><td>True for 82% of small-account viral videos, false for 88% of big-account ones. Above 1M followers, 34% of viral videos pass 5M.</td></tr>
+<tr><td>Common benchmark</td><td>1 million views in 24 to 72 hours</td><td>43% of viral videos stay under 1M. I can't check the time window: views were recorded when each video was analyzed.</td></tr>
+</tbody></table></div>
+<p class="note">Thresholds read on each page on October 8, 2026. Right column: nearly 390 viral videos analyzed by Prooven where the account's follower count is known.</p>
+<p>TikTok itself gives no number. In its June 2020 explainer on the For You feed, it states that follower count is not a direct factor in recommendations. The viral bar is a convention creators made up.</p>
+
+<h2>How many views is viral for your account size</h2>
+<p>The bigger your account, the higher the bar in raw views and the lower it gets as a multiple of followers. I matched nearly 390 viral videos with the follower count of 284 accounts. For each size, the table gives the floor: the number three viral videos out of four exceed.</p>
+<div class="tbl"><table>
+<thead><tr><th>Account size</th><th>Floor in views</th><th>Floor as a multiple of followers</th><th>Share above 1M views</th><th>Share above 5x followers</th></tr></thead>
+<tbody>
+<tr><td>Under 100K followers (88 videos)</td><td>325K</td><td>15x</td><td>55%</td><td>82%</td></tr>
+<tr><td>100K to 1M (216 videos)</td><td>435K</td><td>1.1x</td><td>55%</td><td>44%</td></tr>
+<tr><td>Over 1M (82 videos)</td><td>623K</td><td>0.28x</td><td>65%</td><td>12%</td></tr>
+</tbody></table></div>
+<p class="note">Source: viral videos analyzed one by one by Prooven (2023 to July 2026, mostly Instagram Reels), matched with follower counts recorded after posting. Floor = 75% of the group's videos got more.</p>
+<p>In practice, with 20K followers, a video starts to count as viral around 300K views, about 15 times your audience. With 2 million followers, a video at 600K views can already be a hit, even though only a third of your followers saw it.</p>
+
+<h2>The 5x rule only works for small accounts</h2>
+<p>The rule holds under 100K followers and then falls apart. Below that line, 82% of viral videos got at least 5 times more views than the account has followers. Between 100K and 1M, 44% did. Above 1M, 12%.</p>
+<p>Look only at videos that crossed a million views, and 30% of those from accounts with over 1M followers still got fewer views than the account has followers. Take a Gary Vaynerchuk Reel from November 2025: 1.8 million views on an account with 11.3 million followers. That's 0.16x, and nobody would call it a miss.</p>
+<p>Small accounts blow past every ratio. One account with 30K followers got 28 million views on a 7-second Reel, more than 900 times its audience. It opens on this on-screen text:</p>
+<blockquote><p>"In Japan, Laziness is considered a Disease and people treat it with these 7 methods"</p><p>Zoe Emma Hill, <a href="https://www.instagram.com/reel/DSTZFjXCkiR/">Reel from December 15, 2025</a></p></blockquote>
+<p>So on a small account, aim for at least 5 times your followers. On a big one, compare the video with your own recent posts. The ratio stops meaning anything.</p>
+
+<h2>In English, 1 million is a fair bar</h2>
+<p>English-language videos reach a much bigger pool of viewers, and it shows. Across nearly 340 English-language viral videos, 56% passed 1 million views and 20% passed 5 million. Half of them topped 1.3 million.</p>
+<p>The picture changes in smaller languages. Across nearly 70 French-language viral videos, only 43% crossed 1 million, and 6% passed 5 million. If you post in English for a US or UK audience, the 1 million benchmark is realistic for a video that truly takes off. If you post in a smaller language, viral can mean 300K.</p>
+<p>Views and paid views are two different counts. TikTok's Creator Rewards Program only pays on qualified views, which must last at least 5 seconds, and only on videos longer than one minute (more in the guide to the <a href="/guides/tiktok-creator-rewards-program/">Creator Rewards Program</a>). To see what a viral video could earn, run it through the <a href="/tiktok-money-calculator/">TikTok money calculator</a>.</p>
+
+<h2>What separates a 100K video from a 5M one</h2>
+<p>The videos that climb highest get the most shares and the fewest comments. I compared the middle video of each tier. Shares go from 7.8 per 1,000 views (10K to 100K views) to 13.5 (over 5 million). Comments move the opposite way.</p>
+<figure class="chart"><figcaption class="ct">Comments per 1,000 views, by tier</figcaption><svg viewBox="0 0 640 186" role="img" aria-label="Comments per 1,000 views, by tier : 10K to 100K views 2.3, 100K to 1M 0.8, 1M to 5M 0.4, Over 5M 0.3" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, system-ui, sans-serif"><text x="180" y="25.0" text-anchor="end" font-size="14" fill="#142430">10K to 100K views</text><rect x="190" y="5" width="380.0" height="30" rx="6" fill="#0e314c"/><text x="578.0" y="25.0" font-size="14" font-weight="700" fill="#142430">2.3</text><text x="180" y="69.0" text-anchor="end" font-size="14" fill="#142430">100K to 1M</text><rect x="190" y="49" width="135.4" height="30" rx="6" fill="#0e314c"/><text x="333.4" y="69.0" font-size="14" font-weight="700" fill="#142430">0.8</text><text x="180" y="113.0" text-anchor="end" font-size="14" fill="#142430">1M to 5M</text><rect x="190" y="93" width="68.5" height="30" rx="6" fill="#0e314c"/><text x="266.5" y="113.0" font-size="14" font-weight="700" fill="#142430">0.4</text><text x="180" y="157.0" text-anchor="end" font-size="14" fill="#142430">Over 5M</text><rect x="190" y="137" width="48.9" height="30" rx="6" fill="#fe8204"/><text x="246.9" y="157.0" font-size="14" font-weight="700" fill="#142430">0.3</text></svg><figcaption>Source: nearly 500 viral videos analyzed one by one by Prooven (2023 to July 2026, mostly Instagram Reels). Middle video of each tier. 10K to 100K views: only 30 videos.</figcaption></figure>
+<p>A mega-viral video gets 8 times fewer comments per view than a normal one. It reaches strangers who watch, share and scroll on. If your video has lots of comments but few shares, it's talking to your community. It probably won't leave your bubble.</p>
+<p>Two more gaps stand out. The middle mega-viral video runs 36 seconds, against 62 seconds for good videos. And 57% of mega-viral videos follow a format anyone can reuse as is, against 42% of good ones.</p>
+
+<h2>How to tell if your video went viral for your account</h2>
+<p>The right yardstick is your own account. Here's the check I'd run, using the numbers above.</p>
+<ol>
+<li>Write down your follower count and the views on your last 10 videos from your TikTok analytics.</li>
+<li>Under 100K followers: your video is viral at 5 times your followers, and clearly viral at 15 times.</li>
+<li>Between 100K and 1M: aim for at least as many views as you have followers.</li>
+<li>Above 1M: compare it with your recent videos. The ratio no longer helps.</li>
+<li>Then check shares per 1,000 views. Above 13, your video travels like the ones that pass a million.</li>
+</ol>
+<p>The <a href="/engagement-rate-calculator/">engagement rate calculator</a> does the math for you. And if your videos aren't getting any traction at all, start with <a href="/guides/why-does-my-tiktok-have-0-views/">why a TikTok gets 0 views</a>.</p>
+
+<section class="avis"><h2>My take</h2>
+<p>Stop measuring yourself against a million. For a small account, 5 times your followers already means the algorithm pushed your video to strangers, and 82% of the small-account viral videos I analyzed cleared that line. Once you're there, watch shares more than comments, because shares are what separate a good video from a multimillion one. The limit: I only have videos that worked, mostly Instagram Reels, and follower counts were recorded after the fact. I also don't know how many days those views took.</p>
+</section>
+
+<h2>Frequently asked questions</h2>
+<h3>How many views in 24 hours is viral?</h3>
+<p>TikTok publishes no daily threshold, and my data doesn't track view speed. The sites quoting 1 million in 24 or 72 hours cite no data. Your best check is comparing the video with your last 10 over the same time span.</p>
+<h3>Is 100K views viral?</h3>
+<p>For an account under 20K followers, yes: that's at least 5 times the audience, the line 82% of small-account viral videos pass. For an account with 500K followers, no. The guide on <a href="/guides/how-to-go-viral-on-tiktok/">how to go viral on TikTok</a> covers how to reach the next tier.</p>
+<h3>How many followers do you gain from a viral video?</h3>
+<p>I don't have a reliable number: I recorded follower counts once, after the video. If your goal is the payout threshold, see <a href="/guides/how-many-followers-to-get-paid-on-tiktok/">how many followers you need to get paid</a>.</p>
+
+<ul class="src">
+<li><a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you">TikTok Newsroom, How TikTok recommends videos #ForYou (June 18, 2020)</a></li>
+<li><a href="https://www.tiktok.com/creator-academy/en/article/monetization-creativity-program-qualified-view">TikTok Creator Academy, Qualified views in the Creator Rewards Program (updated August 18, 2026)</a></li>
+<li><a href="https://techweez.com/2026/06/10/how-many-tiktok-views-do-you-need-to-go-viral-in-2026/">Techweez, How many TikTok views do you need to go viral in 2026 (June 18, 2026)</a></li>
+</ul>
+
+<div class="methode"><p><b>How this article was made.</b> The tiers and the gaps between them come from nearly 500 viral videos analyzed one by one by Prooven (posted from 2023 to July 2026, mostly Instagram Reels); the thresholds by account size come from nearly 390 of those videos matched with the account's follower count, recorded after posting. The figure on more than 1,500 videos comes from the production database as of July 29, 2026. Other sites' thresholds were read on October 8, 2026. Written with AI assistance, figures checked and article reviewed by Antonin Girardeau.</p></div>
+<aside class="author"><img src="/assets/antonin-girardeau.jpg" alt="Antonin Girardeau" width="120" height="120" loading="lazy"><div><b>Antonin Girardeau</b><span>Founder of Prooven. I break down viral videos one by one to understand what drives views, and I share here what the data shows.</span><a href="/about/">About me</a></div></aside><section class="related"><h2>Read next</h2><ul><li><a href="/guides/how-to-go-viral-on-tiktok/">How to go viral on TikTok in 2026: 45% of viral videos follow a copyable format</a></li></ul></section><section class="cta-box dark"><h2>Find the formats that work for you</h2><p>Prooven analyses your account, gives you a score out of 100 and shows you one viral format a day, adapted to your niche. Coming soon to iPhone.</p><form class="wl" data-source="article-combien-vues-viral" novalidate>
+<div class="wl-row"><label class="vh" for="m-article-combien-vues-viral">Your email</label><input id="m-article-combien-vues-viral" type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Your email"><label class="vh" for="i-article-combien-vues-viral">Your Instagram @ (optional)</label><input id="i-article-combien-vues-viral" type="text" name="instagram" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="60" placeholder="Your Instagram @ (optional)"></div>
+<div class="trap" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
+<label class="ok"><input type="checkbox" name="consentement" required><span>I agree to get an email when Prooven launches. Unsubscribe in one click. <a href="/privacy/">Privacy</a></span></label>
+<button type="submit">Notify me</button>
+<p class="wl-msg" role="status" aria-live="polite"></p>
+</form></section></article>
+</main>
+<footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/legal-notice/">Legal notice</a> · <a href="/privacy/">Privacy</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a></div><div>Published by AUDAX, EURL (French single-member limited liability company) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven is a trademark filed by AUDAX.</div></div></footer>
+<script src="/assets/site.js?v=109ac444" defer></script>
+</body>
+</html>
