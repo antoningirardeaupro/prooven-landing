@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Algorithme YouTube Shorts : 2,2 fois plus de vues à 15 s</title>
+<meta name="description" content="Algorithme YouTube Shorts : règles officielles et données. Les vidéos virales de 15 s ou moins font 2,2 fois plus de vues que celles de 16 à 60 s.">
+<meta name="robots" content="noindex">
+
+
+<meta name="theme-color" content="#0e314c">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prooven">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Algorithme YouTube Shorts : 2,2 fois plus de vues à 15 s">
+<meta property="og:description" content="Algorithme YouTube Shorts : règles officielles et données. Les vidéos virales de 15 s ou moins font 2,2 fois plus de vues que celles de 16 à 60 s.">
+
+<meta property="og:image" content="https://prooven.fr/assets/og-fr.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:swap;src:url(/assets/fonts/dmsans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 900;font-display:swap;src:url(/assets/fonts/dmsans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--petrol:#0e314c;--petrol-dark:#0a2337;--petrol-light:#16496e;--orange:#fe8204;--orange-dark:#d96a00;--orange-soft:#fff1e2;--orange-text:#b8590a;--ivory:#fbf7f0;--card:#fff;--ink:#142430;--muted:#5b6b77;--border:#e7dfd2}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--ivory);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.55}
+a{color:var(--orange-text)}
+.top{background:var(--petrol);color:#fff}
+.top .in{max-width:1020px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:19px}
+.logo img{width:34px;height:34px;border-radius:9px}
+.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px}
+@media (max-width:520px){.nav{gap:6px 14px;font-size:14px}}
+.nav a{color:rgba(255,255,255,.82);text-decoration:none;font-weight:600}
+.nav a:hover,.nav a[aria-current]{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.hero{background:radial-gradient(120% 140% at 50% -20%,var(--petrol-light) 0%,var(--petrol) 55%,var(--petrol-dark) 100%);color:#fff;text-align:center;padding:56px 24px 170px;overflow:hidden}
+.owl{width:128px;height:128px;border-radius:30px;box-shadow:0 18px 50px rgba(0,0,0,.4);margin-bottom:34px;animation:float 5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media (prefers-reduced-motion:reduce){.owl{animation:none}}
+.badge{display:inline-block;background:rgba(254,130,4,.16);border:1px solid rgba(254,130,4,.45);color:#ffb568;font-size:13.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:8px 18px;border-radius:999px;margin-bottom:24px}
+h1{font-size:clamp(36px,6.5vw,60px);font-weight:900;letter-spacing:-.025em;line-height:1.05;max-width:780px;margin:0 auto 20px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--orange)}
+.hero p.sub{font-size:clamp(16px,2.2vw,19px);color:rgba(255,255,255,.8);max-width:580px;margin:0 auto 36px}
+.cta{display:inline-block;background:var(--orange);color:#fff;font-size:17px;font-weight:800;text-decoration:none;padding:17px 36px;border-radius:999px;box-shadow:0 10px 30px rgba(254,130,4,.4);transition:transform .15s,background .15s}
+.cta:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.cta-note{margin-top:14px;font-size:13.5px;color:rgba(255,255,255,.6)}
+.cards{max-width:1020px;margin:-110px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;position:relative;z-index:2}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px 28px;box-shadow:0 14px 40px rgba(14,49,76,.12)}
+.pict{width:52px;height:52px;border-radius:14px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px}
+.card h3{font-size:19px;font-weight:800;margin-bottom:8px;letter-spacing:-.01em}
+.card p{font-size:15px;color:var(--muted)}
+.how{max-width:680px;margin:80px auto 0;padding:0 24px;text-align:center}
+.how h2,.bottom h2{font-size:clamp(26px,4vw,34px);font-weight:900;letter-spacing:-.02em;margin-bottom:32px;text-wrap:balance}
+.steps{text-align:left}
+.step{display:flex;gap:18px;align-items:flex-start;padding:18px 0}
+.step+.step{border-top:1px solid var(--border)}
+.num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--petrol);color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.step b{display:block;font-size:16.5px;margin-bottom:3px}
+.step span{font-size:14.5px;color:var(--muted)}
+.trust{max-width:680px;margin:72px auto 0;padding:0 24px;display:flex;gap:18px;align-items:center}
+.trust img{width:72px;height:72px;border-radius:50%;flex:none}
+.trust p{font-size:15px;color:var(--muted)}
+.trust b{color:var(--ink)}
+.bottom{text-align:center;margin:72px auto 0;padding:0 24px}
+.bottom img{width:64px;height:64px;border-radius:16px;margin-bottom:18px}
+.page{max-width:760px;margin:0 auto;padding:48px 24px 0}
+.page h1{font-size:clamp(30px,5vw,42px);text-align:left;margin:0 0 10px;color:var(--ink)}
+.page .lede{font-size:18px;color:var(--muted);margin-bottom:28px}
+.page h2{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:34px 0 10px;text-wrap:balance}
+.page p,.page li{font-size:16px;margin-bottom:12px}
+.page ul{padding-left:22px}
+.page .meta{font-size:13.5px;color:var(--muted);margin-bottom:24px}
+.author{display:flex;gap:22px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px;margin:8px 0 26px}
+.author img{width:120px;height:120px;border-radius:50%;flex:none}
+.author b{display:block;font-size:20px}
+.author span{color:var(--muted)}
+@media (max-width:520px){.author{flex-direction:column;text-align:center}.trust{flex-direction:column;text-align:center}}
+.box{background:var(--orange-soft);border-radius:16px;padding:18px 20px;margin:20px 0}
+footer{margin-top:90px;background:var(--petrol-dark);color:rgba(255,255,255,.65);padding:36px 24px 42px;font-size:13.5px;line-height:1.8}
+footer .in{max-width:1020px;margin:0 auto;display:grid;gap:10px;text-align:center}
+footer .fb{color:#fff;font-weight:800;font-size:15px}
+footer a{color:#ffb568;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* liste d'attente */
+.wl{max-width:520px;margin:0 auto;text-align:left}
+.wl-row{display:flex;gap:10px;flex-wrap:wrap}
+.wl input[type=email],.wl input[type=text]{flex:1 1 200px;min-width:0;font:inherit;font-size:16px;padding:15px 18px;border-radius:999px;border:1.5px solid var(--border);background:#fff;color:var(--ink)}
+.wl input:focus-visible{outline:3px solid var(--orange);outline-offset:1px;border-color:var(--orange)}
+.wl button{display:block;width:100%;margin-top:14px;font:inherit;font-size:16.5px;font-weight:800;color:#fff;background:var(--orange);border:0;border-radius:999px;padding:15px 28px;cursor:pointer;box-shadow:0 10px 30px rgba(254,130,4,.35);transition:transform .15s,background .15s}
+.wl button:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.wl button:disabled{opacity:.7;cursor:wait;transform:none}
+.wl .ok{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:13.5px;line-height:1.45;color:var(--muted);cursor:pointer}
+.wl .ok input{margin-top:2px;width:18px;height:18px;flex:none;accent-color:var(--orange)}
+.wl-msg{margin-top:12px;font-weight:700;font-size:15px}
+.wl-msg:empty{display:none}
+.wl-msg.is-ok{color:#1f7a4a}.wl-msg.is-err{color:#b3261e}
+.wl.done .wl-row,.wl.done .ok,.wl.done button{display:none}
+.wl.done .wl-msg{font-size:17px;padding:14px 18px;border-radius:14px;background:#e7f6ee}
+.dark .wl .ok{color:rgba(255,255,255,.72)}
+.dark .wl .ok a{color:#ffb568}
+.dark .wl input[type=email],.dark .wl input[type=text]{border-color:transparent}
+.dark .wl-msg.is-ok{color:#8ff0bc}.dark .wl-msg.is-err{color:#ffb4ab}
+.dark .wl.done .wl-msg{background:rgba(255,255,255,.1)}
+.tool{max-width:680px;margin:72px auto 0;padding:0 24px;display:grid;gap:14px}
+.tool a{display:flex;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(14,49,76,.08);transition:transform .15s}
+.tool a:hover{transform:translateY(-2px)}
+.tool b{display:block;font-size:17px}.tool span{font-size:14.5px;color:var(--muted)}
+.tool .pict{margin:0;flex:none}
+/* calculateur */
+.calc{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:22px;box-shadow:0 14px 40px rgba(14,49,76,.1);margin:6px 0 30px}
+.tabs{display:flex;gap:6px;background:var(--ivory);border-radius:999px;padding:5px;margin-bottom:18px}
+.tabs button{flex:1;font:inherit;font-size:14.5px;font-weight:700;border:0;border-radius:999px;padding:10px 12px;background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--petrol);color:#fff}
+.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end}
+@media (max-width:640px){.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fields label{display:flex;flex-direction:column;gap:5px;font-size:13.5px;font-weight:700;color:var(--ink);min-width:0}
+.fields label small{font-weight:500;color:var(--muted)}
+.fields label.wide{grid-column:span 2}
+
+.fields input,.fields select{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--border);background:#fff;color:var(--ink);min-width:0;width:100%;font-variant-numeric:tabular-nums}
+.fields input:focus-visible,.fields select:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
+.calc .f-abonnes,.calc.m-abonnes .f-vues{display:none}
+.calc.m-abonnes .f-abonnes{display:flex}
+#rev:not([data-plat=tiktok]) .t-only,#rev[data-plat=instagram] label.wide:nth-child(2){display:none}
+.fields label.check{flex-direction:row;align-items:center;gap:10px;font-size:15px;cursor:pointer;padding:12px 0}
+.fields label.check input{width:20px;height:20px;flex:none;accent-color:var(--orange)}
+#rev .tabs button{padding:10px 6px}
+ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
+.res .lab2{color:#ffb568}
+.res{margin-top:20px;border-radius:18px;background:var(--petrol);color:#fff;padding:22px}
+.res .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.res .big{font-size:clamp(40px,9vw,56px);font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.res .lab{font-size:15px;font-weight:800;padding:5px 12px;border-radius:999px;background:var(--orange);color:#fff}
+.res .lab:empty{display:none}
+.res .lab[data-band="0"]{background:#c2412d}.res .lab[data-band="1"]{background:#b7791f}.res .lab[data-band="2"]{background:#2f855a}.res .lab[data-band="3"]{background:#2b6cb0}.res .lab[data-band="4"]{background:var(--orange)}
+.res .txt{margin-top:12px;color:rgba(255,255,255,.88);font-size:15.5px}
+.res .sec{margin-top:6px;color:#ffb568;font-size:14.5px;font-weight:700}
+.res .sec:empty{display:none}
+.gauge{position:relative;margin:24px 8px 34px;height:12px;border-radius:999px}
+.gauge .you{position:absolute;top:50%;width:22px;height:22px;margin-left:-11px;margin-top:-11px;border-radius:50%;background:#fff;border:4px solid var(--petrol);box-shadow:0 0 0 2px #fff;transition:left .25s}
+.gauge .tick{position:absolute;top:20px;transform:translateX(-50%);font-size:11.5px;color:rgba(255,255,255,.72);white-space:nowrap;font-variant-numeric:tabular-nums}
+.answer{font-size:17px;background:var(--orange-soft);border-radius:16px;padding:16px 18px;margin:0 0 22px}
+.tbl{overflow-x:auto;margin:14px 0 18px}
+.tbl table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+.tbl th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.tbl .n{text-align:right;white-space:nowrap}
+.tbl td.n{font-weight:700}
+.formula{font-size:16px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin:10px 0 16px;font-weight:700}
+.cta-box{background:var(--petrol);color:#fff;border-radius:22px;padding:30px 22px;margin:38px 0 0;text-align:center}
+.page .cta-box h2{margin:0 0 8px;color:#fff}
+.page .cta-box p{color:rgba(255,255,255,.8);margin-bottom:0}
+.cta-box .wl{margin-top:18px}
+#relecture textarea{width:100%;font:inherit;font-size:16px;padding:14px;border-radius:14px;border:1.5px solid var(--border);margin:10px 0 14px}
+#relecture button.cta{border:0;cursor:pointer;font-family:inherit}
+.rl-msg{font-weight:700;margin-top:16px}
+.crumbs{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+.crumbs a{color:var(--muted)}
+.post h2{font-size:24px;margin-top:40px}
+.post h3{font-size:18.5px;font-weight:800;margin:24px 0 8px}
+.post p,.post li{font-size:17px;line-height:1.65}
+.post ol{padding-left:22px}
+.post blockquote{border-left:4px solid var(--orange);background:var(--card);padding:14px 18px;border-radius:0 14px 14px 0;margin:18px 0;font-size:17px}
+.post figure{margin:22px 0}.post figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
+.post .author{margin-top:44px}
+.author a{display:inline-block;margin-top:6px;font-weight:700}
+.essentiel{background:var(--card);border:1px solid var(--border);border-left:5px solid var(--orange);border-radius:14px;padding:16px 20px;margin:0 0 26px}
+.essentiel b.t{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--orange-text);margin-bottom:6px}
+.essentiel ul{margin:0;padding-left:20px}.essentiel li{margin-bottom:6px;font-size:16px}
+.avis{background:var(--petrol);color:#fff;border-radius:18px;padding:20px 22px;margin:30px 0}
+.avis h2{color:#fff;margin-top:0}.post .avis p{color:rgba(255,255,255,.9)}
+.methode{font-size:14.5px;color:var(--muted);border-top:1px solid var(--border);margin-top:34px;padding-top:16px}
+.post .methode p{font-size:14.5px}
+figure.chart{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;overflow-x:auto}
+figure.chart svg{width:100%;height:auto;min-width:420px}
+figure.chart .ct{font-weight:800;font-size:15.5px;color:var(--ink);margin:0 0 10px}
+.related{margin-top:34px}.related ul{padding-left:20px}.related li{margin-bottom:8px}
+.grappe{margin-top:30px}
+ul.guides{list-style:none;padding:0;display:grid;gap:12px}
+ul.guides li{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin:0}
+ul.guides li a{font-weight:800;font-size:17px;text-decoration:none;color:var(--ink)}
+ul.guides li a:hover{color:var(--orange-text)}
+ul.guides small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.pill{display:inline-block;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--orange-soft);color:var(--orange-text);padding:3px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
+</style>
+
+</head>
+<body>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/guides/" aria-current="page">Guides</a><a href="/calculateur-taux-engagement/">Engagement</a><a href="/calculateur-revenus-tiktok/">Revenus</a><a href="/a-propos/">À propos</a><a href="/methodologie/">Méthodologie</a><a href="https://getprooven.com/" hreflang="en" lang="en">English</a></nav></div></header>
+<main>
+<div style="background:#fff1e2;border:1px solid #fe8204;border-radius:12px;padding:10px 14px;margin:12px auto;max-width:760px;font-size:14px"><b>Aperçu privé</b> : cet article n'est pas encore en ligne. Il sortira après validation.</div><article class="page post"><nav class="crumbs" aria-label="Fil d’Ariane"><a href="/">Accueil</a> › <a href="/guides/">Guides</a> › <span>Algorithme YouTube Shorts 2026 : les Shorts de 15 secondes font 2,2 fois plus de vues</span></nav><h1>Algorithme YouTube Shorts 2026 : les Shorts de 15 secondes font 2,2 fois plus de vues</h1><p class="meta">Par <a href="/a-propos/">Antonin Girardeau</a>, fondateur de Prooven · Publié le 2 novembre 2026 · 11 min</p><p class="answer">L'algorithme YouTube Shorts pousse les Shorts que les gens choisissent de regarder au lieu de les passer. YouTube l'a dit en août 2023 : une vue doit traduire « l'intention de regarder », et depuis le 31 mars 2025 cette mesure s'appelle « vues engagées ». Dans les vidéos virales verticales que j'ai analysées, les plus courtes vont le plus loin : à 15 secondes ou moins, la moitié dépasse 2,6 millions de vues, 2,2 fois plus qu'entre 16 et 60 secondes.</p>
+
+<div class="essentiel"><b class="t">L'essentiel</b><ul>
+<li>YouTube compte une vue dès que le Short démarre depuis le 31 mars 2025. Pour l'argent, il garde l'ancienne mesure, les vues engagées.</li>
+<li>Un Short peut durer 3 minutes depuis le 15 octobre 2024. Au-delà d'une minute, une seule réclamation Content ID le bloque dans le monde entier.</li>
+<li>Les vidéos virales de 15 secondes ou moins font 2,6 millions de vues en moyenne, contre 1,2 million entre 16 et 60 secondes.</li>
+<li>Les vidéos de plus d'une minute sont deux fois plus partagées par vue : 14,1 partages pour 1 000 vues, contre 6,8 pour les très courtes.</li>
+</ul></div>
+
+<h2>Ce que YouTube dit officiellement de l'algorithme des Shorts</h2>
+<p>YouTube traite les Shorts à part de ses vidéos longues. Todd Sherman, alors chef de produit des Shorts, l'a expliqué sur la chaîne Creator Insider en août 2023. Sur une vidéo longue, tu choisis quoi regarder. Sur les Shorts, tu fais défiler un fil et tu découvres en passant. Le système ne lit donc pas les mêmes signaux.</p>
+<p>Sherman a donné trois consignes claires. Publier plus ne change pas la portée en soi, mais une série de vidéos bâclées qui font peu de réactions te dessert. Supprimer un Short pour le republier risque d'être vu comme du spam. Les hashtags servent quand ils collent à un événement ou à un sujet précis, sans être obligatoires.</p>
+<p>L'enjeu est énorme. Le 18 juin 2025, à Cannes, le patron de YouTube Neal Mohan a annoncé plus de 200 milliards de vues de Shorts par jour. L'annonce tombe moins de trois mois après le changement de compteur décrit juste en dessous.</p>
+
+<h2>Le signal qui compte : regardé ou passé</h2>
+<p>La question que se pose YouTube pour chaque Short est simple : la personne l'a-t-elle regardé exprès, ou l'a-t-elle passé ? Sherman le disait en 2023 : « une vue doit encoder ton intention de regarder ». Ça ne veut pas dire que c'est ta vidéo préférée, juste que tu la regardes volontairement.</p>
+<p>Le 31 mars 2025, YouTube a changé son compteur public. Une vue compte désormais dès que le Short démarre ou repart en boucle, sans durée minimale. L'ancienne mesure n'a pas disparu : elle s'appelle « vues engagées » dans YouTube Analytics. C'est elle qui sert à payer les créateurs et à juger l'accès au Programme Partenaire.</p>
+<p>Conséquence pratique : le gros chiffre sous ton Short gonfle, mais il ne dit plus si les gens sont restés. Pour savoir si ton accroche tient, regarde dans YouTube Studio la part de spectateurs qui ont regardé ta vidéo plutôt que de la passer. YouTube ne publie aucun seuil officiel pour ce taux, et les « 70 % minimum » qui circulent ne citent pas de source.</p>
+
+<h2>La durée : les Shorts les plus courts vont le plus loin</h2>
+<p>Dans mes données, les vidéos de 15 secondes ou moins font deux fois plus de vues que toutes les autres. J'ai trié près de 500 vidéos virales verticales par durée. La moitié de celles qui durent 15 secondes ou moins dépassent 2,6 millions de vues. Entre 16 et 60 secondes, la vidéo du milieu fait 1,2 million.</p>
+<figure class="chart"><figcaption class="ct">Vues de la vidéo virale du milieu, selon sa durée (en milliers)</figcaption><svg viewBox="0 0 640 230" role="img" aria-label="Vues de la vidéo virale du milieu, selon sa durée (en milliers) : 15 s ou moins 2 648, 16 à 30 s 1 286, 31 à 60 s 1 191, 61 à 90 s 1 414, 91 s à 3 min 943" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, system-ui, sans-serif"><text x="180" y="25.0" text-anchor="end" font-size="14" fill="#142430">15 s ou moins</text><rect x="190" y="5" width="380.0" height="30" rx="6" fill="#fe8204"/><text x="578.0" y="25.0" font-size="14" font-weight="700" fill="#142430">2 648</text><text x="180" y="69.0" text-anchor="end" font-size="14" fill="#142430">16 à 30 s</text><rect x="190" y="49" width="184.5" height="30" rx="6" fill="#0e314c"/><text x="382.5" y="69.0" font-size="14" font-weight="700" fill="#142430">1 286</text><text x="180" y="113.0" text-anchor="end" font-size="14" fill="#142430">31 à 60 s</text><rect x="190" y="93" width="170.9" height="30" rx="6" fill="#0e314c"/><text x="368.9" y="113.0" font-size="14" font-weight="700" fill="#142430">1 191</text><text x="180" y="157.0" text-anchor="end" font-size="14" fill="#142430">61 à 90 s</text><rect x="190" y="137" width="202.9" height="30" rx="6" fill="#0e314c"/><text x="400.9" y="157.0" font-size="14" font-weight="700" fill="#142430">1 414</text><text x="180" y="201.0" text-anchor="end" font-size="14" fill="#142430">91 s à 3 min</text><rect x="190" y="181" width="135.3" height="30" rx="6" fill="#0e314c"/><text x="333.3" y="201.0" font-size="14" font-weight="700" fill="#142430">943</text></svg><figcaption>Source : près de 500 vidéos virales verticales analysées une par une par Prooven (2023 à juillet 2026, surtout des Reels Instagram). Lecture : la moitié des vidéos de 15 secondes ou moins dépassent 2,6 millions de vues. Aucune ne dépasse 3 minutes.</figcaption></figure>
+<p>Le plancher bouge encore plus. Parmi les vidéos de 15 secondes ou moins, trois sur quatre dépassent un million de vues. Entre 16 et 60 secondes, une sur quatre reste sous 269 000. Une vidéo très courte se finit presque toujours, et elle repart en boucle avant que le pouce ne bouge. Sur les Shorts, chaque boucle compte comme une vue depuis mars 2025.</p>
+<p class="box">Aucune des près de 500 vidéos virales analysées ne dépasse 3 minutes, la limite des Shorts. Mais 43 % durent plus d'une minute : sur YouTube, elles sont toutes exposées au blocage Content ID.</p>
+
+<h2>Les Shorts longs sont plus partagés</h2>
+<p>Une vidéo courte fait des vues, une vidéo longue fait des partages. Entre 61 secondes et 3 minutes, la vidéo virale du milieu fait 14,1 partages pour 1 000 vues. À 15 secondes ou moins, elle n'en fait que 6,8.</p>
+<figure class="chart"><figcaption class="ct">Partages pour 1 000 vues, selon la durée de la vidéo</figcaption><svg viewBox="0 0 640 142" role="img" aria-label="Partages pour 1 000 vues, selon la durée de la vidéo : 15 s ou moins 6,8, 16 à 60 s 12,3, 61 s à 3 min 14,1" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans, system-ui, sans-serif"><text x="180" y="25.0" text-anchor="end" font-size="14" fill="#142430">15 s ou moins</text><rect x="190" y="5" width="183.3" height="30" rx="6" fill="#0e314c"/><text x="381.3" y="25.0" font-size="14" font-weight="700" fill="#142430">6,8</text><text x="180" y="69.0" text-anchor="end" font-size="14" fill="#142430">16 à 60 s</text><rect x="190" y="49" width="331.5" height="30" rx="6" fill="#0e314c"/><text x="529.5" y="69.0" font-size="14" font-weight="700" fill="#142430">12,3</text><text x="180" y="113.0" text-anchor="end" font-size="14" fill="#142430">61 s à 3 min</text><rect x="190" y="93" width="380.0" height="30" rx="6" fill="#fe8204"/><text x="578.0" y="113.0" font-size="14" font-weight="700" fill="#142430">14,1</text></svg><figcaption>Source : près de 500 vidéos virales verticales analysées une par une par Prooven (2023 à juillet 2026, surtout des Reels Instagram). Valeur de la vidéo du milieu de chaque groupe.</figcaption></figure>
+<p>La raison tient au contenu. Les vidéos de plus d'une minute sont à 66 % éducatives, et 64 % se gardent comme « ressource utile ». Sous 15 secondes, cette part tombe à 31 %. On envoie un tuto à un ami. Une blague de 7 secondes, on la regarde trois fois et on passe à la suivante.</p>
+<p>Fabien Olicard en est un bon exemple. Son astuce pour s'endormir dure 110 secondes et a fait 5,5 millions de vues le 7 juillet 2025, avec une première phrase qui promet un résultat chiffré :</p>
+<blockquote><p>« Je ne veux pas me la raconter, mais j'ai la meilleure astuce pour s'endormir en moins de quinze minutes maximum. »</p><p>Fabien Olicard, <a href="https://www.instagram.com/reel/DLz_9FysphD/">Reel du 7 juillet 2025</a></p></blockquote>
+
+<h2>Durée par durée : ce que font les vidéos virales</h2>
+<p>Chaque tranche de durée a son format. Ce tableau donne, pour chaque groupe, la vidéo virale du milieu et la trame la plus fréquente.</p>
+<div class="tbl"><table>
+<thead><tr><th>Repère</th><th>15 s ou moins</th><th>16 à 60 s</th><th>61 s à 3 min</th></tr></thead>
+<tbody>
+<tr><td>Part des vidéos analysées</td><td>17 %</td><td>40 %</td><td>43 %</td></tr>
+<tr><td>Vues de la vidéo du milieu</td><td>2,65 M</td><td>1,19 M</td><td>1,10 M</td></tr>
+<tr><td>Une vidéo sur quatre reste sous</td><td>1,01 M</td><td>269 000</td><td>494 000</td></tr>
+<tr><td>Partages pour 1 000 vues</td><td>6,8</td><td>12,3</td><td>14,1</td></tr>
+<tr><td>Taux d'engagement</td><td>4,1 %</td><td>5,8 %</td><td>6,8 %</td></tr>
+<tr><td>Trame la plus fréquente</td><td>Situation puis chute (45 %)</td><td>Problème puis solution (36 %)</td><td>Problème puis solution (31 %)</td></tr>
+<tr><td>Format reproductible tel quel</td><td>73 %</td><td>45 %</td><td>34 %</td></tr>
+</tbody></table></div>
+<p class="note">Unités : vues en millions (M) ; partages pour 1 000 vues ; parts en % des vidéos du groupe. Taux d'engagement : likes, commentaires, partages et enregistrements visibles, divisés par les vues. Source : vidéos virales verticales analysées une par une par Prooven (2023 à juillet 2026, surtout des Reels Instagram) ; aucune vidéo YouTube Shorts dans l'échantillon.</p>
+<p>Le groupe du milieu, 16 à 60 secondes, est le plus risqué. C'est là que le plancher est le plus bas : une vidéo sur quatre reste sous 269 000 vues. Trop long pour tourner en boucle, trop court pour apprendre quelque chose qu'on a envie d'envoyer.</p>
+
+<h2>Les formats qui marchent sous 15 secondes</h2>
+<p>Sous 15 secondes, presque une vidéo sur deux suit la même trame : une situation, puis une chute. L'humour pèse 34 % des formats, contre 12 % entre 16 et 60 secondes. Et 73 % de ces vidéos se refont telles quelles, sans talent d'acteur ni matériel.</p>
+<p>Le cas le plus net de la base dure une seconde. Kien Nguyen, créateur de contenu, a posté le 22 août 2024 un plan fixe de nuit avec une seule phrase à l'écran. La vidéo a fait 83,8 millions de vues :</p>
+<blockquote><p>« POV: Me editing a reel till 3 AM, only to get 69 views. »</p><p>Kien Nguyen, <a href="https://www.instagram.com/reel/C-84i5TyO0F/">Reel du 22 août 2024</a></p></blockquote>
+<p>En français : « moi qui monte un Reel jusqu'à 3 h du matin pour faire 69 vues ». Tout tient dans le texte. Le spectateur lit, rit, et la vidéo est déjà repartie. Soph a fait mieux avec 13 secondes : un dialogue parent-enfant en voiture, 137,8 millions de vues le 13 décembre 2025.</p>
+
+<h2>L'accroche : une seconde pour ne pas être passé</h2>
+<p>Sur les Shorts, tu as une seconde. C'est Jenny Hoyos qui le dit, une créatrice américaine invitée par le blog officiel de YouTube le 28 janvier 2025 : « on a une seconde pour accrocher, surtout sur les Shorts ». Sa méthode tient en trois temps : surprendre, créer la curiosité, puis tenir la promesse.</p>
+<p>Mes données vont dans son sens. Dans 78 % des vidéos virales de plus d'une minute, l'accroche ouvre une question que seule la fin referme. Fabien Olicard promet « moins de quinze minutes ». Lou Elsener promet « les meilleures pâtes aux crevettes de votre vie », et son tuto de 157 secondes a fait 9,2 millions de vues le 11 septembre 2025.</p>
+<p>La miniature, elle, ne sert presque à rien pour la découverte. Toujours sur le blog de YouTube, Hoyos et Sherman rappellent que « 99,9 % des vues viennent du fil Shorts ». Personne n'y voit ta miniature avant de regarder.</p>
+
+<h2>Le piège des Shorts de plus d'une minute</h2>
+<p>Un Short de plus d'une minute avec une réclamation Content ID active est bloqué partout sur YouTube. La règle est écrite dans l'aide officielle, et elle vaut quel que soit le type de réclamation. Le Short n'est alors ni lisible ni recommandé.</p>
+<p>Le cas typique : tu reprends un Reel de 90 secondes avec un son tendance d'Instagram. Sur YouTube, ce son appartient souvent à un label qui le protège. Tu ne prends pas d'avertissement, mais ta vidéo disparaît. Retire la musique, prends un son de la bibliothèque YouTube, ou coupe sous la minute.</p>
+<p>Le compteur d'argent a aussi changé. À partir du 1er février 2027, il faudra 10 millions de vues Shorts qualifiées sur 90 jours pour toucher sa part des revenus Shorts. Pour voir ce que tes vues rapporteraient ailleurs, le <a href="/calculateur-revenus-tiktok/">calculateur de revenus TikTok</a> fait le calcul.</p>
+
+<h2>Les règles officielles des Shorts en un tableau</h2>
+<p>Sept règles écrites par YouTube décident de ce que deviennent tes Shorts. Le fonctionnement de TikTok est détaillé dans l'article sur <a href="/guides/algorithme-tiktok/">l'algorithme TikTok</a> : là-bas aussi, le visionnage complet compte en premier.</p>
+<div class="tbl"><table>
+<thead><tr><th>Règle</th><th>YouTube Shorts</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Durée maximale</td><td>3 minutes (depuis le 15 octobre 2024)</td><td>Aide YouTube</td></tr>
+<tr><td>Vue affichée</td><td>Dès le lancement ou la boucle (depuis le 31 mars 2025)</td><td>Aide YouTube</td></tr>
+<tr><td>Mesure qui paie</td><td>Vues engagées</td><td>Aide YouTube</td></tr>
+<tr><td>Musique protégée, plus d'1 min</td><td>Short bloqué dans le monde</td><td>Aide YouTube</td></tr>
+<tr><td>Part de revenus du créateur</td><td>45 %</td><td>Aide YouTube</td></tr>
+<tr><td>Seuil pour être payé (dès le 1er février 2027)</td><td>10 millions de vues qualifiées sur 90 jours</td><td>Aide YouTube</td></tr>
+<tr><td>Supprimer puis republier</td><td>Risque d'être vu comme du spam</td><td>Todd Sherman, août 2023</td></tr>
+</tbody></table></div>
+<p class="note">Sources : pages d'aide YouTube consultées le 2 novembre 2026 ; Todd Sherman sur Creator Insider, repris par le Blog du Modérateur (28 août 2023).</p>
+
+<section class="avis"><h2>Mon avis</h2>
+<p>Choisis ton camp avant de tourner : 15 secondes pour les vues, plus d'une minute pour les partages. Le milieu, entre 16 et 60 secondes, a le plancher le plus bas de mes données, une vidéo sur quatre sous 269 000 vues. Si tu fais de l'humour ou du « POV », coupe sous 15 secondes et mets tout dans le texte à l'écran. Si tu enseignes, assume la minute et demie, et ouvre sur un résultat chiffré comme le fait Fabien Olicard. Dans les deux cas, pas de son tendance protégé au-delà d'une minute. La limite : ma base ne contient aucun Short YouTube, ce sont surtout des Reels Instagram. Je montre ce qui fait voyager une vidéo verticale, pas le poids exact que YouTube donne à chaque signal. Pour savoir à partir de combien de vues une vidéo devient virale à ta taille, les seuils sont dans <a href="/guides/combien-vues-viral/">combien de vues pour être viral</a>.</p>
+</section>
+
+<h2>Questions fréquentes</h2>
+<h3>Les Shorts aident-ils ma chaîne de vidéos longues ?</h3>
+<p>YouTube ne publie aucun chiffre là-dessus. Sherman a seulement dit en 2023 que YouTube fait « beaucoup de choses » pour les Shorts qu'il ne fait pas pour les vidéos longues. Rien ne prouve qu'un Short qui marche pousse tes vidéos longues.</p>
+<h3>Faut-il publier un Short par jour ?</h3>
+<p>Non, pas si la qualité baisse. YouTube dit que publier plus ne change pas la portée en soi, et que des vidéos bâclées qui font peu de réactions te desservent. Les conseils pour percer avec peu de vidéos sont dans le guide pour <a href="/guides/percer-tiktok/">percer sur TikTok</a>, et ils valent pour les Shorts.</p>
+<h3>Comment savoir si mon Short a été vraiment regardé ?</h3>
+<p>Regarde les vues engagées dans YouTube Analytics, pas le compteur public. Le <a href="/calculateur-taux-engagement/">calculateur de taux d'engagement</a> te dit ensuite si tes likes et partages suivent.</p>
+
+<ul class="src">
+<li><a href="https://support.google.com/youtube/answer/10059070?hl=fr">Aide YouTube, Premiers pas avec YouTube Shorts : comptage des vues au 31 mars 2025 (consulté le 2 novembre 2026)</a></li>
+<li><a href="https://support.google.com/youtube/answer/15424877?hl=fr">Aide YouTube, Comprendre les Shorts de trois minutes (consulté le 2 novembre 2026)</a></li>
+<li><a href="https://support.google.com/youtube/answer/12504220?hl=fr">Aide YouTube, Partage des revenus publicitaires des Shorts (consulté le 2 novembre 2026)</a></li>
+<li><a href="https://www.blogdumoderateur.com/youtube-explique-comment-fonctionne-algorithme-shorts/">Blog du Modérateur, YouTube explique comment fonctionne l'algorithme pour les Shorts (28 août 2023)</a></li>
+<li><a href="https://blog.youtube/creator-and-artist-stories/youtube-shorts-deep-dive/">Blog officiel YouTube, conversation entre Jenny Hoyos et Todd Sherman sur les Shorts (28 janvier 2025)</a></li>
+<li><a href="https://blog.youtube/news-and-events/neal-mohan-cannes-2025/">Blog officiel YouTube, Neal Mohan at Cannes Lions 2025 (18 juin 2025)</a></li>
+</ul>
+
+<div class="methode"><p><b>Comment cet article a été fait.</b> Les chiffres viennent de près de 500 vidéos virales verticales analysées une par une par Prooven (publiées de 2023 à juillet 2026, surtout des Reels Instagram, aucun Short YouTube), triées par durée ; les enregistrements, masqués, ont été exclus et jamais comptés comme zéro. Les règles viennent des pages d'aide et du blog officiel de YouTube, lus le 2 novembre 2026, et des propos de Todd Sherman rapportés par la presse. Rédaction assistée par IA, chiffres vérifiés et article relu par Antonin Girardeau.</p></div>
+<aside class="author"><img src="/assets/antonin-girardeau.jpg" alt="Antonin Girardeau" width="120" height="120" loading="lazy"><div><b>Antonin Girardeau</b><span>Fondateur de Prooven. J’analyse des vidéos virales une par une pour comprendre ce qui fait des vues, et je partage ici ce que les données montrent.</span><a href="/a-propos/">Qui suis-je</a></div></aside><section class="related"><h2>À lire aussi</h2><ul><li><a href="/guides/combien-vues-viral/">Combien de vues pour être viral sur TikTok ? Les seuils réels selon ta taille de compte (43 % des virales sous 1 million)</a></li><li><a href="/guides/percer-tiktok/">Comment percer sur TikTok en 2026 : 45 % des vidéos virales suivent un format à copier</a></li><li><a href="/guides/tiktok-0-vue/">Pourquoi ta vidéo TikTok fait 0 vue (et pourquoi 23 % des vidéos virales viennent de petits comptes)</a></li><li><a href="/guides/shadowban/">Shadowban : comment savoir si tu l&#x27;es vraiment (le test en 4 étapes)</a></li></ul></section><section class="cta-box dark"><h2>Trouve les formats qui marchent pour toi</h2><p>Prooven analyse ton compte, te donne une note sur 100 et te montre chaque jour un format viral adapté à ton secteur. Bientôt sur iPhone.</p><form class="wl" data-source="article-algorithme-youtube-shorts" novalidate>
+<div class="wl-row"><label class="vh" for="m-article-algorithme-youtube-shorts">Ton email</label><input id="m-article-algorithme-youtube-shorts" type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Ton email"><label class="vh" for="i-article-algorithme-youtube-shorts">Ton @ Instagram (facultatif)</label><input id="i-article-algorithme-youtube-shorts" type="text" name="instagram" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="60" placeholder="Ton @ Instagram (facultatif)"></div>
+<div class="trap" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
+<label class="ok"><input type="checkbox" name="consentement" required><span>J'accepte de recevoir un email au lancement de Prooven. Désinscription en un clic. <a href="/confidentialite/">Confidentialité</a></span></label>
+<button type="submit">Préviens-moi</button>
+<p class="wl-msg" role="status" aria-live="polite"></p>
+</form></section></article>
+</main>
+<footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/a-propos/">À propos</a></div><div>Édité par AUDAX, EURL (entreprise unipersonnelle à responsabilité limitée) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven est une marque déposée par AUDAX.</div></div></footer>
+<script src="/assets/site.js?v=109ac444" defer></script>
+</body>
+</html>
